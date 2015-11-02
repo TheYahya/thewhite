@@ -1,0 +1,302 @@
+/*
+Theme Name: The White
+Author: Yahya SayadArabbi
+Author URI: http://ysarbabi.ir
+Description: Designded By Yahya SayadArbabi, Aban-e 1394.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: personal, white, simple, persian, farsi
+Text Domain: Just White & Simple!
+
+This theme, is licensed under the WTFPL (https://en.wikipedia.org/wiki/WTFPL).
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+    font-family: 'vazir';
+    src: url('fonts/Vazir.ttf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+} 
+@font-face {
+        font-family: 'ANafis';
+        src: url('fonts/ANafis.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    } 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: 'vazir'; 
+} 
+.contact-form input[type="email"], .contact-form input[type="text"] {
+    margin-bottom: 13px;
+    max-width: 98%;
+    width: 300px;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+    padding: 5px;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: #444;
+    border: medium none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    margin: auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s; 
+} 
+button{
+    line-height: 1.6em;
+}
+.contact-form label {
+    display: block;
+    float: none;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.contact-form textarea {
+    float: none;
+    height: 200px;
+    margin-bottom: 13px;
+    width: 80%;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'vazir',Tahoma, Georgia, Times, serif;  
+}
+.wrapper, .header{  
+    text-align: center;  
+}  
+.blog-name {
+    color: #49699d;
+}
+.blog-name a {
+    text-decoration: none; 
+    color: #2e2e2e;
+    font-size: 1.5em;
+} 
+.header-links {
+    margin-bottom: 2.5em;
+}
+.header-links a {
+    font-family: 'ANafis' , Georgia, Times, serif;
+    text-decoration: none;
+    color: #49699d;
+    font-size: 1.2em;
+    margin: 0 0.5em 0 0.5em;
+}  
+.header-links a:hover {
+    color: #000000;
+}
+.header-links  span {
+    color: #8d8d8d;
+}
+/** POSTS **/
+.post {  
+    margin-bottom: 3em;
+}
+.content {  
+    direction: rtl;
+    text-align: right;
+    width: 50%;
+    margin:auto; 
+}
+.entry-content{
+    line-height: 1.5em;
+} 
+.entry-content a, .notf p a, .comment-reply-link, .fn a, .nav-links a, .footerWrapper a {
+    color: #49699d;
+    text-decoration: none;  
+    border-bottom: #49699d  dashed  1px; 
+}
+.entry-content a:hover, .notf p a:hover, .comment-reply-link:hover, .fn a:hover, .navigation a:hover, .footerWrapper a:hover {
+    color: #000000; 
+    border-bottom: #000000  dashed  1px;
+} 
+/* Images */
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+    max-width: 100% !important; 
+    height: auto;
+}
+.article-header #title a, #title a { 
+    text-decoration: none;
+    color: #4a4a4a; 
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+}  
+.article-header #title a:hover, #title a:hover{
+    color: #49699d;
+}
+.article-header #date {
+    color: #888888;
+    font-size: 1em;
+    font-family: 'ANafis';
+}
+.nav-links {
+    padding: 1em 0 2em 0;  
+} 
+.nav-previous {
+    float: left;
+}
+.nav-next {
+    float: right;
+}
+.footer {     
+    width: 50%; 
+    margin: auto; 
+    padding-top: 2.5em;
+} 
+.footerWrapper { 
+    color: #ffffff; 
+}
+.footerWrapper h2{
+    color: #747474; 
+}  
+.footerWrapper { 
+    margin: auto;  
+}
+.footer-item{
+    float: right; 
+    width: 100%; 
+    text-align: right; 
+    clear: both;
+    margin-bottom: -1em;
+}   
+.cat #topic {
+    color: #000000;
+    font-size: 1.3em;
+}
+.cat li {
+    list-style: none ;
+    display: inline;
+}
+.cat span {
+    color: #000000;
+}
+.copyright-stuff {
+    clear: both;  
+    color: #4d4d4d;
+    font-size: 10px; 
+    padding-top: 2em;
+    width: 50%;
+    margin: auto; 
+}
+.copyright-stuff a{
+    color: #659ec7;
+    text-decoration: none; 
+}
+.copyright-stuff a:hover{ 
+    color: #000000;
+}
+.notf{
+    width: 100%; 
+}
+.notf #first-notf {
+    font-size: 50px;
+}
+.notf #second-notf {
+    font-size: 32px;
+    color: #4d4d4d;
+}
+ 
+.comment {
+    margin-top: 2em; 
+}
+.comment-body{
+    border-bottom: 1px #b2b2b2 solid; 
+}
+.comment  .children {
+    margin-right: 4em;
+}
+.comment-meta a{
+    text-decoration: none;
+    color: #868686; 
+}
+.avatar {
+    border-radius: 100%;
+}
+@media all and (max-width: 1000px){
+    body {
+        font-size: 19px;
+    }
+    .content { 
+        width: 60%;
+    }
+    .footer { 
+        width: 60%;
+    }
+    .copyright-stuff {
+        width: 60%;
+    }
+}
+@media all and (max-width: 900px){
+    body {
+        font-size: 20px;
+    }
+    .content { 
+        width: 70%;
+    }
+    .footer { 
+        width: 70%;
+    }
+    .copyright-stuff {
+        width: 70%;
+    }
+}
+@media all and (max-width: 600px){ 
+    .blog-name a {
+        font-size: 2.5em;
+    }
+    .content { 
+        width: 90%;
+    }
+    .footerWrapper { 
+        width: 90%;
+    }
+    .copyright-stuff {
+        width: 90%;
+    }
+    .footer-item{
+        float: right; 
+        width: 100%; 
+        text-align: center;  
+    } 
+    .wrapper {
+        margin-top: 0;
+    } 
+} 
+
+ 
