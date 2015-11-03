@@ -160,7 +160,7 @@ img {
 .article-header #title a:hover, #title a:hover{
     color: #49699d;
 }
-.article-header #date {
+#date {
     color: #888888;
     font-size: 1em;
     font-family: 'ANafis';
