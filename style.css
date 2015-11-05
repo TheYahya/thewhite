@@ -13,17 +13,13 @@ This theme, is licensed under the WTFPL (https://en.wikipedia.org/wiki/WTFPL).
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @font-face {
-    font-family: 'vazir';
-    src: url('fonts/Vazir.ttf') format("opentype");
-    font-weight: normal;
-    font-style: normal;
-} 
-@font-face {
-        font-family: 'ANafis';
-        src: url('fonts/ANafis.ttf') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    } 
+      font-family: Vazir;
+      src: url('fonts/Vazir.eot');
+      src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+           url('fonts/Vazir.woff') format('woff'),
+           url('fonts/Vazir.ttf') format('truetype');
+      font-weight: normal;
+    }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,7 +28,7 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-    font-family: 'vazir'; 
+    font-family: Vazir; 
 } 
 .contact-form input[type="email"], .contact-form input[type="text"] {
     margin-bottom: 13px;
@@ -83,7 +79,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    font-family: 'vazir',Tahoma, Georgia, Times, serif;  
+    font-family: Vazir,Tahoma, Georgia, Times, serif;  
 }
 .wrapper, .header{  
     text-align: center;  
@@ -100,10 +96,10 @@ body {
     margin-bottom: 2.5em;
 }
 .header-links a {
-    font-family: 'ANafis' , Georgia, Times, serif;
+    font-family: Vazir , Georgia, Times, serif;
     text-decoration: none;
     color: #49699d;
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin: 0 0.5em 0 0.5em;
 }  
 .header-links a:hover {
@@ -162,8 +158,8 @@ img {
 }
 #date {
     color: #888888;
-    font-size: 1em;
-    font-family: 'ANafis';
+    font-size: 0.8em;
+    font-family: Vazir;
 }
 .nav-links {
     padding: 1em 0 2em 0;  
