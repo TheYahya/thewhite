@@ -30,13 +30,7 @@ function simple_personal_paging_nav() {
 } 
 
 
-/**
- * Filters wp_title to print a neat <title> tag based on what is being viewed.
- *
- * @param string $title Default title text for current view.
- * @param string $sep   Optional separator.
- * @return string The filtered title.
- */
+/**********************************************************/
 function wpdocs_theme_name_wp_title( $title, $sep ) {
     if ( is_feed() ) {
         return $title;
