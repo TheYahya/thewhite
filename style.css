@@ -86,6 +86,7 @@ body {
 }  
 .blog-name {
     color: #49699d;
+    margin: 0;
 }
 .blog-name a {
     text-decoration: none; 
