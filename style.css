@@ -3,7 +3,7 @@ Theme Name: The White
 Author: Yahya SayadArabbi
 Author URI: http://ysarbabi.ir
 Description: Designded By Yahya SayadArbabi, Aban-e 1394.
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: personal, white, simple, persian, farsi
@@ -111,7 +111,8 @@ body {
 }
 /** POSTS **/
 .post {  
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px #e0e0e0 solid;
 }
 .content {  
     direction: rtl;
@@ -146,6 +147,7 @@ body {
 img {
     max-width: 100% !important; 
     height: auto;
+    border-radius: 6px;
 }
 .article-header #title a, #title a { 
     text-decoration: none;
