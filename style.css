@@ -80,6 +80,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Vazir,Tahoma, Georgia, Times, serif;  
+    font-size: 19px;
 }
 .wrapper, .header{  
     text-align: center;  
@@ -113,11 +114,15 @@ body {
 .post {  
     margin-bottom: 1.5em;
     border-bottom: 1px #e0e0e0 solid;
+    text-align: justify;
 }
+.content, .footer, .copyright-stuff {     
+    max-width: 40em;
+    padding: 0 2em 0 2em;
+ }
 .content {  
     direction: rtl;
     text-align: right;
-    width: 50%;
     margin:auto; 
 }
 .entry-content{
@@ -174,7 +179,6 @@ img {
     float: right;
 }
 .footer {     
-    width: 50%; 
     margin: auto; 
     padding-top: 2.5em;
 } 
@@ -209,8 +213,7 @@ img {
     clear: both;  
     color: #4d4d4d;
     font-size: 10px; 
-    padding-top: 2em;
-    width: 50%;
+    padding-top: 2em; 
     margin: auto; 
 }
 .copyright-stuff a{
@@ -246,52 +249,15 @@ img {
 }
 .avatar {
     border-radius: 100%;
-}
-@media all and (max-width: 1000px){
+} 
+@media all and (max-width: 1024px){
     body {
-        font-size: 19px;
-    }
-    .content { 
-        width: 60%;
-    }
-    .footer { 
-        width: 60%;
-    }
-    .copyright-stuff {
-        width: 60%;
-    }
-}
-@media all and (max-width: 900px){
-    body {
-        font-size: 20px;
-    }
-    .content { 
-        width: 70%;
-    }
-    .footer { 
-        width: 70%;
-    }
-    .copyright-stuff {
-        width: 70%;
-    }
+        font-size: 24px;
+    } 
 }
 @media all and (max-width: 600px){ 
     .blog-name a {
         font-size: 2.5em;
-    }
-    .content { 
-        width: 90%;
-    }
-    .footerWrapper { 
-        width: 90%;
-    }
-    .copyright-stuff {
-        width: 90%;
-    }
-    .footer-item{
-        float: right; 
-        width: 100%; 
-        text-align: center;  
     } 
     .wrapper {
         margin-top: 0;
