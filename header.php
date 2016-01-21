@@ -11,7 +11,7 @@
         <div class="wrapper" dir="rtl"> 
             <div class="header" > 
                   
-                   <p class="blog-name"><a href="<?php echo home_url(); ?>"><span><?php bloginfo('name'); ?></span></a>: <?php bloginfo('description'); ?></p> 
+                   <p class="blog-name"><a href="<?php echo home_url(); ?>"><span><?php bloginfo('name'); ?></span></a> <?php bloginfo('description'); ?></p> 
                 <p class="header-links"><span> </span> 
                    
                    

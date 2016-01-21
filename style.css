@@ -136,7 +136,10 @@ body {
 .entry-content a:hover, .notf p a:hover, .comment-reply-link:hover, .fn a:hover, .navigation a:hover, .footerWrapper a:hover {
     color: #000000; 
     border-bottom: #000000  dashed  1px;
-} 
+}  
+.read-more-p{
+    text-align: left;
+}
 /* Images */
 .alignleft {
 	float: left;
@@ -150,7 +153,7 @@ body {
 	margin-right: auto;
 }
 img {
-    max-width: 100% !important; 
+    width: 100%; 
     height: auto;
     border-radius: 6px;
 }
@@ -255,10 +258,7 @@ img {
         font-size: 24px;
     } 
 }
-@media all and (max-width: 600px){ 
-    .blog-name a {
-        font-size: 2.5em;
-    } 
+@media all and (max-width: 600px){  
     .wrapper {
         margin-top: 0;
     } 
