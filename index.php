@@ -10,7 +10,7 @@
                 </p>
             </header>
             <section class="entry-content cf">
-            <?php the_content('بیشتر بخوانید <span class="meta-nav">&larr;</span>',false); ?>
+            <?php the_content('<p class="read-more-p">بیشتر بخوانید <span class="meta-nav">&larr;</span></p>',false); ?>
             </section>
             <footer class="article-footer cf">
                 
