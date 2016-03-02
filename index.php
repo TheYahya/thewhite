@@ -6,7 +6,9 @@
             <header class="article-header">
                 <p id="title" >
                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                    <p id="date"><?php the_time('l j F  Y') ?></p>
+                    <p id="date"> 
+                        <span class="meta-data-item"><i class="demo-icon icon-calendar"></i><?php the_time('l j F  Y') ?></span>
+                    </p> 
                 </p>
             </header>
             <section class="entry-content cf">

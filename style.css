@@ -3,7 +3,7 @@ Theme Name: The White
 Author: Yahya SayadArabbi
 Author URI: http://ysarbabi.ir
 Description: Designded By Yahya SayadArbabi, Aban-e 1394.
-Version: 1.1
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: personal, white, simple, persian, farsi
@@ -11,15 +11,15 @@ Text Domain: Just White & Simple!
 
 This theme, is licensed under the WTFPL (https://en.wikipedia.org/wiki/WTFPL).
 Use it to make something cool, have fun, and share what you've learned with others.
-*/
+*/ 
 @font-face {
       font-family: Vazir;
-      src: url('fonts/Vazir.eot');
-      src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'),
-           url('fonts/Vazir.woff') format('woff'),
-           url('fonts/Vazir.ttf') format('truetype');
+      src: url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.eot');
+      src: url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.eot?#iefix') format('embedded-opentype'),
+           url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.woff') format('woff'),
+           url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.ttf') format('truetype');
       font-weight: normal;
-    }
+    }*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,8 +27,8 @@ del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    font-family: Vazir; 
+table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
+    font-family: Vazir;  
 } 
 .contact-form input[type="email"], .contact-form input[type="text"] {
     margin-bottom: 13px;
@@ -49,8 +49,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     border-radius: 4px;
     color: #ffffff;
     cursor: pointer;
-    display: inline-block;
-    font-size: 1em;
+    display: inline-block;  
     margin: auto;
     padding: 10px 15px;
     text-decoration: none;
@@ -64,6 +63,11 @@ button{
     float: none;
     font-weight: 700;
     margin-bottom: 3px;
+}
+textarea {
+	padding: 4pt;
+	width: 100%;
+	height: 10em;
 }
 .contact-form textarea {
     float: none;
@@ -80,29 +84,42 @@ body {
     margin: 0;
     padding: 0;
     font-family: Vazir,Tahoma, Georgia, Times, serif;  
-    font-size: 19px;
+    font-size: 18px;
+    background-color: #f9f9f9;
 }
 .wrapper, .header{  
     text-align: center;  
-}  
+} 
 .blog-name {
-    color: #49699d;
+    color: #428396;
     margin: 0;
+    font-weight: 600;
+}
+.blog-name {
+
+    padding: 1.5em 0 1.5em 0;
 }
 .blog-name a {
     text-decoration: none; 
     color: #2e2e2e;
     font-size: 1.5em;
-} 
-.header-links {
-    margin-bottom: 2.5em;
+}  
+.blog-name a:hover {
+    text-decoration: none; 
+    color: #AD1600;
+    font-size: 1.5em;
+}  
+.header-links { 
+	padding: 1.5em;
+	border: solid #EFEFEF 1px;
+	background: #fcfcfc;
 }
 .header-links a {
     font-family: Vazir , Georgia, Times, serif;
     text-decoration: none;
-    color: #49699d;
-    font-size: 0.9em;
-    margin: 0 0.5em 0 0.5em;
+    color: #428396; 
+    margin: 0 0.8em 0 0.8em;
+    font-weight: 600;
 }  
 .header-links a:hover {
     color: #000000;
@@ -117,8 +134,8 @@ body {
     text-align: justify;
 }
 .content, .footer, .copyright-stuff {     
-    max-width: 40em;
-    padding: 0 2em 0 2em;
+    max-width: 35em;
+    padding: 0 1em 0 1em;
  }
 .content {  
     direction: rtl;
@@ -127,15 +144,14 @@ body {
 }
 .entry-content{
     line-height: 1.5em;
+    color: #434343;
 } 
 .entry-content a, .notf p a, .comment-reply-link, .fn a, .nav-links a, .footerWrapper a {
-    color: #49699d;
-    text-decoration: none;  
-    border-bottom: #49699d  dashed  1px; 
+    color: #428396;
+    text-decoration: none;    
 }
 .entry-content a:hover, .notf p a:hover, .comment-reply-link:hover, .fn a:hover, .navigation a:hover, .footerWrapper a:hover {
-    color: #000000; 
-    border-bottom: #000000  dashed  1px;
+    color: #1CB7E7;  
 }  
 .read-more-p{
     text-align: left;
@@ -155,25 +171,32 @@ body {
 img {
     width: 100%; 
     height: auto;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 .article-header #title a, #title a { 
     text-decoration: none;
-    color: #4a4a4a; 
-    font-size: 2em;
+    color: #525252; 
+    font-size: 1.4em;
     text-align: center;
     font-weight: 600;
+    letter-spacing: 2pt;
 }  
 .article-header #title a:hover, #title a:hover{
-    color: #49699d;
+    color: #428396;
 }
 #date {
     color: #888888;
     font-size: 0.8em;
-    font-family: Vazir;
+    font-family: Vazir; 
+}
+.meta-data-item {
+	margin-left: 1.5em;
+}
+.meta-data-item i{
+	margin-left: 2pt;
 }
 .nav-links {
-    padding: 1em 0 2em 0;  
+    padding: 1em 0 1.5em 0;  
 } 
 .nav-previous {
     float: left;
@@ -183,48 +206,57 @@ img {
 }
 .footer {     
     margin: auto; 
-    padding-top: 2.5em;
-} 
-.footerWrapper { 
-    color: #ffffff; 
-}
+    padding-top: 2.5em; 
+}  
 .footerWrapper h2{
     color: #747474; 
 }  
-.footerWrapper { 
-    margin: auto;  
+.footerWrapper {  
+	border-top: 1px #e0e0e0 solid;
+    margin: auto;    
 }
 .footer-item{
     float: right; 
     width: 100%; 
-    text-align: right; 
-    clear: both;
-    margin-bottom: -1em;
-}   
+    text-align: center; 
+    clear: both;  
+    font-weight: 600; 
+}    
 .cat #topic {
     color: #000000;
-    font-size: 1.3em;
+    font-size: 1.5em; 
+    margin: 0;
+    padding: 0;
+}
+.cat #topic i{
+	font-size: 16px;
 }
 .cat li {
     list-style: none ;
     display: inline;
+    padding: 0 0.5em 0 0.5em;
 }
 .cat span {
     color: #000000;
 }
 .copyright-stuff {
-    clear: both;  
-    color: #4d4d4d;
-    font-size: 10px; 
-    padding-top: 2em; 
-    margin: auto; 
+    min-width: 100%;
+    clear: both;
+    color: #ffffff; 
+    font-size: 0.7em;
+    margin: auto;   
+    background: #333333;
+    padding: 2em 0 2em 0;
+}
+.copyright-stuff p{
+    margin: 0;
 }
 .copyright-stuff a{
     color: #659ec7;
     text-decoration: none; 
 }
-.copyright-stuff a:hover{ 
-    color: #000000;
+.copyright-stuff a:hover{  
+    border-bottom: 1px dashed #659ec7;
 }
 .notf{
     width: 100%; 
@@ -252,10 +284,16 @@ img {
 }
 .avatar {
     border-radius: 100%;
+    max-width: 2.5em;
+    max-height: 2.5em;
 } 
+/** ICONS **/
+.demo-icon{
+	color: #444444; 
+}
 @media all and (max-width: 1024px){
     body {
-        font-size: 24px;
+        font-size: 20px;
     } 
 }
 @media all and (max-width: 600px){  

@@ -4,7 +4,9 @@
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <p id="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-<p id="date"><?php the_time('l j F  Y') ?></p>
+<p id="date">
+    <span class="meta-data-item"><i class="demo-icon icon-calendar"></i><?php the_time('l j F  Y') ?></span>
+</p>
 <div class="entry-content">
         <?php the_content(); ?>
 </div>
