@@ -70,7 +70,7 @@ add_filter( 'wp_title', 'wpdocs_theme_name_wp_title', 10, 2 );
  */
 add_filter ( 'wp_list_categories', 'span_before_link_list_categories' );
 function span_before_link_list_categories( $list ) {
-$list = str_replace('</a>','</a><span> | </span>',$list);
+$list = str_replace('</a>','</a>',$list);
 return $list;
 }
 
