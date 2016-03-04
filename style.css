@@ -96,7 +96,6 @@ body {
     font-weight: 600;
 }
 .blog-name {
-
     padding: 1.5em 0 1.5em 0;
 }
 .blog-name a {
@@ -104,10 +103,8 @@ body {
     color: #2e2e2e;
     font-size: 1.5em;
 }  
-.blog-name a:hover {
-    text-decoration: none; 
-    color: #AD1600;
-    font-size: 1.5em;
+.blog-name a:hover { 
+    color: #007182; 
 }  
 .header-links { 
 	padding: 1.5em;
@@ -135,7 +132,7 @@ body {
 }
 .content, .footer, .copyright-stuff {     
     max-width: 35em;
-    padding: 0 1em 0 1em;
+    padding: 0em 1em 0em 1em; 
  }
 .content {  
     direction: rtl;
@@ -154,8 +151,9 @@ body {
     color: #1CB7E7;  
 }  
 .read-more-p{
-    text-align: left;
-}
+    text-align: center;
+    font-weight: 600;	
+} 
 /* Images */
 .alignleft {
 	float: left;
@@ -172,12 +170,18 @@ img {
     width: 100%; 
     height: auto;
     border-radius: 3px;
+} 
+.page-title {
+	font-size: 1.6em; 
+	text-align: center;
+}
+.post-title{
+	text-align: center;
 }
 .article-header #title a, #title a { 
     text-decoration: none;
     color: #525252; 
-    font-size: 1.4em;
-    text-align: center;
+    font-size: 1.5em; 
     font-weight: 600;
     letter-spacing: 2pt;
 }  
@@ -185,18 +189,20 @@ img {
     color: #428396;
 }
 #date {
+	text-align: center;
     color: #888888;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-family: Vazir; 
 }
 .meta-data-item {
-	margin-left: 1.5em;
+	margin: 0em 1em 0em 1em;
 }
 .meta-data-item i{
-	margin-left: 2pt;
+	margin: 2px; 
 }
 .nav-links {
     padding: 1em 0 1.5em 0;  
+    font-weight: 600;
 } 
 .nav-previous {
     float: left;
@@ -224,7 +230,7 @@ img {
 }    
 .cat #topic {
     color: #000000;
-    font-size: 1.5em; 
+    font-size: 1.7em; 
     margin: 0;
     padding: 0;
 }
@@ -289,12 +295,18 @@ img {
 } 
 /** ICONS **/
 .demo-icon{
-	color: #444444; 
+	color: #555;  
 }
 @media all and (max-width: 1024px){
     body {
         font-size: 20px;
     } 
+    .content, .footer, .copyright-stuff {     
+    	max-width: 45em; 
+ 	}
+ 	.meta-data-item i{
+		margin-left: 7px; 
+	}
 }
 @media all and (max-width: 600px){  
     .wrapper {
