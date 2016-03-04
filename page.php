@@ -3,11 +3,7 @@
     <div class="content">
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<p id="title" class="post-title" ><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-<p id="date">
-    <span class="meta-data-item"><i class="demo-icon icon-calendar"></i><?php the_time('l j F  Y') ?></span>
-    <span class="meta-data-item"><i class="demo-icon icon-comment"></i><?php comments_number(); ?> </span> 
-</p>
+<p id="title" class="page-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
 <div class="entry-content">
         <?php the_content(); ?>
 </div>
