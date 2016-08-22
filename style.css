@@ -14,12 +14,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */ 
 @font-face {
       font-family: Vazir;
-      src: url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.eot');
-      src: url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.eot?#iefix') format('embedded-opentype'),
-           url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.woff') format('woff'),
-           url('fonts/vazir/persian-digits-overwrite/Vazir-persian-digits-overwrite.ttf') format('truetype');
+      src: url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot');
+      src: url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+           url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff') format('woff'),
+           url('fonts/vazir/Farsi-Digits/Vazir-Light-FD.ttf') format('truetype');
       font-weight: normal;
-    }*
+    }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
