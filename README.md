@@ -1,5 +1,5 @@
 # thewhite
-simple wordpress theme, see [live demo](http://ysarbabi.ir/blog/).
+simple wordpress theme.
 
 # LICENSE
 This theme, is licensed under the [WTFPL](https://en.wikipedia.org/wiki/WTFPL).
