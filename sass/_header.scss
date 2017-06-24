@@ -1,0 +1,37 @@
+.header {  
+  #nav-wrapper {
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    border-top: 3px solid $color;
+    .container { 
+      padding: .5rem 0;
+    }
+    nav { 
+      ul {
+        display: inline-block;
+        // justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {  
+          display: inline;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  #blog-title { 
+    text-align: center; 
+    h1, h2 {
+      padding: 0;
+      margin: 0;
+    }
+    h1 {
+      display: inline-block;
+    }
+    h2 {
+      color: #aaa;
+      font-size: 1.2rem;
+    }
+  }
+}
