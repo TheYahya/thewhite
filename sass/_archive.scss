@@ -1,0 +1,39 @@
+.date { 
+  width: 4rem;
+  display: inline-block;
+}
+
+.date-year-divider { 
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555; 
+  line-height: .3; 
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%;
+  span {
+    background: $body-bg;
+    padding: 0 2rem;     
+  }
+}
+
+.date-year-divider-first {
+  border-bottom: none;
+}
+
+.date-year {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+.date-month-day {
+  color: #999; 
+  display: inline-block;
+  font-size: 1.1rem;  
+}
+.archive__post-title {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.1rem;
+}

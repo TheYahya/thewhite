@@ -1,4 +1,17 @@
 <?php
+
+if($hello === 'hi') {
+    
+}
+
+load_theme_textdomain('thewhite', get_template_directory() . '/languages');
+
+add_action('after_setup_theme', 'setup_theme');
+function setup_theme(){
+    load_theme_textdomain('thewhite', get_template_directory() . '/languages');
+}
+
+
  // Change “Read more” link in Wordpress 4.1 to prevent scroll/remove “more-X” hash
 function remove_more_link_scroll( $link ) {
   $link = preg_replace( '|#more-[0-9]+|', '', $link );

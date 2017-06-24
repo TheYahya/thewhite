@@ -1,0 +1,166 @@
+/*
+Theme Name: TheWhite
+Author: Yahya SayadArabbi
+Author URI: http://ysarbabi.ir
+Description: Simple And Lite.
+Version: 2.0
+License:  The MIT License (MIT)
+License URI: https://mit-license.org/
+Tags: personal, white, simple, persian, farsi
+Text Domain: Just White & Simple!
+*/
+@font-face {
+  font-family: Sahel;
+  src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot");
+  src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot?#iefix") format("embedded-opentype"), url("fonts/sahel/Farsi-Digits/Sahel-FD.woff") format("woff"), url("fonts/sahel/Farsi-Digits/Sahel-FD.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Samim;
+  src: url("fonts/samim/Samim.eot");
+  src: url("fonts/samim/Samim.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Samim.woff") format("woff"), url("fonts/samim/Samim.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Samim;
+  src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot");
+  src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.woff") format("woff"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.ttf") format("truetype");
+  font-weight: bold; }
+
+@font-face {
+  font-family: Vazir Code;
+  src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot");
+  src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.woff") format("woff"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.ttf") format("truetype");
+  font-weight: normal; }
+
+/** Theme Color Samples :) **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
+  font-family: Sahel; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #fdfdfd; }
+
+a {
+  text-decoration: none;
+  color: #1D8E9B; }
+  a:hover {
+    color: #156770; }
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.brackets {
+  padding: 0 10px; }
+  .brackets:after, .brackets:before {
+    color: #888;
+    font-weight: 900;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .brackets:after {
+    content: '}';
+    padding-right: .1em;
+    -moz-transform: translate(0, 0.1em);
+    -ms-transform: translate(0, 0.1em);
+    -o-transform: translate(0, 0.1em);
+    -webkit-transform: translate(0, 0.1em);
+    transform: translate(0, 0.1em); }
+  .brackets:before {
+    content: '{';
+    -moz-transform: translate(0.4em, 0.1em);
+    -ms-transform: translate(0.4em, 0.1em);
+    -o-transform: translate(0.4em, 0.1em);
+    -webkit-transform: translate(0.4em, 0.1em);
+    transform: translate(0.4em, 0.1em); }
+  .brackets:hover:after, .brackets:hover:before {
+    color: #444; }
+  .brackets:hover:after {
+    -moz-transform: translate(-0.2em, 0.1em);
+    -ms-transform: translate(-0.2em, 0.1em);
+    -o-transform: translate(-0.2em, 0.1em);
+    -webkit-transform: translate(-0.2em, 0.1em);
+    transform: translate(-0.2em, 0.1em);
+    padding-right: 0; }
+  .brackets:hover:before {
+    -moz-transform: translate(0.6em, 0.1em);
+    -ms-transform: translate(0.6em, 0.1em);
+    -o-transform: translate(0.6em, 0.1em);
+    -webkit-transform: translate(0.6em, 0.1em);
+    transform: translate(0.6em, 0.1em); }
+
+@media all and (max-width: 42rem) {
+  html, body {
+    font-size: 14px; } }
+
+.header #nav-wrapper {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  border-top: 3px solid #1D8E9B; }
+  .header #nav-wrapper .container {
+    padding: .5rem 0; }
+  .header #nav-wrapper nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .header #nav-wrapper nav ul li {
+      display: inline;
+      font-size: 1rem; }
+
+.header #blog-title {
+  text-align: center; }
+  .header #blog-title h1, .header #blog-title h2 {
+    padding: 0;
+    margin: 0; }
+  .header #blog-title h1 {
+    display: inline-block; }
+  .header #blog-title h2 {
+    color: #aaa;
+    font-size: 1.2rem; }
+
+.date {
+  width: 4rem;
+  display: inline-block; }
+
+.date-year-divider {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .date-year-divider span {
+    background: #fdfdfd;
+    padding: 0 2rem; }
+
+.date-year-divider-first {
+  border-bottom: none; }
+
+.date-year {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444; }
+
+.date-month-day {
+  color: #999;
+  display: inline-block;
+  font-size: 1.1rem; }
+
+.archive__post-title {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.1rem; }

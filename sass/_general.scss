@@ -1,0 +1,66 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
+    font-family: Sahel;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: $body-bg;
+}
+a {
+  text-decoration: none;
+  color: $color;
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+.container {
+  max-width: $container-width; 
+  margin: 0 auto;
+  padding: 0 2rem; 
+}
+
+.brackets {
+  padding: 0 10px;
+  &:after, &:before {
+    color: #888;
+    font-weight: 900;
+    position: absolute;
+    @include transition(all, .3s);
+  }
+  &:after {
+    content: '}'; 
+    padding-right: .1em;
+    @include transform-translate(0, .1em);
+  }
+  &:before {
+    content: '{';
+    @include transform-translate(.4em, .1em);
+  }
+  &:hover {
+    &:after, &:before {
+      color: #444;
+    }
+    &:after { 
+      @include transform-translate(-.2em, .1em);
+      padding-right: 0;
+    }
+    &:before { 
+      @include transform-translate(.6em, .1em);
+    }
+  }
+}
+
+@media all and (max-width: $container-width-plus) {
+  html, body {
+    font-size: 14px; 
+  } 
+}

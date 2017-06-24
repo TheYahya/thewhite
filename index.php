@@ -1,41 +1,35 @@
 <?php get_header(); ?>
-<div id="main">
-    <div class="content">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
-            <header class="article-header">
-                <p id="title" class="post-title">
-                    <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                    <p id="date"> 
-                        <span class="meta-data-item"><i class="demo-icon icon-calendar"></i><?php the_time('l j F  Y') ?></span>
-                        <span class="meta-data-item"><i class="demo-icon icon-comment"></i><?php comments_number(); ?> </span> 
-                    </p>  
-                </p>
-            </header>
-            <section class="entry-content cf">
-            <?php the_content('<p class="read-more-p">بیشتر بخوانید...</p>',false); ?>
-            </section>
-            <footer class="article-footer cf">
-                
-            </footer>
-        </article>
-<?php endwhile; ?> 
-<?php simple_personal_paging_nav(); ?>
-<?php else : ?>
-<article id="post-not-found" class="hentry cf">
-                                            <header class="article-header">
-                                            <h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-                                            </header>
-                                            <section class="entry-content">
-                                            <p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-                                            </section>
-                                            <footer class="article-footer">
-												<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p
-												</footer>
-</article>
-   <?php endif; ?> 
-    </div> 
-</div>
-<div id="delimiter">
-</div>
+<div class="container"> 
+
+<?php 
+$myposts = get_posts(array(
+              'post_type' => 'post',
+              'post_status' => 'publish',
+              'nopaging' => true, 
+            ));
+$the_year = null;
+$the_month = null;
+$first_year = true;
+$first_month = true; 
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+    <?php 
+    if ($the_year != get_the_date('Y')){
+        $the_year = get_the_date('Y');
+        // echo (!$first_year) ? '<div class="date-year-divider"><span>…</span></div>' : '';
+        echo ($first_year) ? 
+            '<div class="date-year-divider"><span>' . $the_year . '</span></div>' : 
+            '<div class="date-year-divider"><span>' . $the_year . '</span></div>';
+        
+        $first_year = false;
+        //echo '<span class="date date-year">' . $the_year . '</span>';
+    }
+    ?>
+    <article>
+        <span class="date date-month-day"><?=the_date('d/m')?></span><h3 class="archive__post-title"><a href="<?php the_permalink() ?>"><?=the_title();?></a></h3>
+    </article>
+<?php 
+endforeach; 
+wp_reset_postdata();
+?>
+</div> 
 <?php get_footer(); ?>
