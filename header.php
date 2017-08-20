@@ -18,6 +18,7 @@
           <nav>
             <ul>
               <?php
+                // header links from Theme panel
                 $first_header_link = get_option('first_header_url');
                 $first_header_link_text = get_option('first_header_url_text');
                 if($first_header_link != null && $first_header_link_text != null){?>

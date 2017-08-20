@@ -12,16 +12,14 @@ $the_month = null;
 $first_year = true;
 $first_month = true; 
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-    <?php 
+    <?php
     if ($the_year != get_the_date('Y')){
-        $the_year = get_the_date('Y');
-        // echo (!$first_year) ? '<div class="date-year-divider"><span>…</span></div>' : '';
+        $the_year = get_the_date('Y'); 
         echo ($first_year) ? 
             '<div class="date-year-divider"><span>' . $the_year . '</span></div>' : 
             '<div class="date-year-divider"><span>' . $the_year . '</span></div>';
         
         $first_year = false;
-        //echo '<span class="date date-year">' . $the_year . '</span>';
     }
     ?>
     <article>

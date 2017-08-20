@@ -18,4 +18,4 @@ msgstr ""
 
 #: index.php:1
 msgid "Hello"
-msgstr ""
+msgstr "Hello"
