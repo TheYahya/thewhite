@@ -19,3 +19,21 @@ msgstr ""
 #: index.php:1
 msgid "Hello"
 msgstr "سلام"
+
+msgid "theme_panel"
+msgstr "تنظیمات پوسته"
+
+msgid "link"
+msgstr "لینک"
+
+msgid "text"
+msgstr "متن"
+
+msgid "header_link"
+msgstr "لینک سربرگ"
+
+msgid "footer_link"
+msgstr "لینک پانوشت"
+
+msgid "all_settings"
+msgstr "همه‌ی تنظیمات"
