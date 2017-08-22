@@ -17,7 +17,13 @@
         <section class="container">
           <nav>
             <ul>
-              <?php
+                <?php 
+                // show pages in header!
+                foreach(get_pages() as $page) { ?>
+                <li class="brackets"><a href="<?=$post->guid?>"?><?=$page->post_title?></a></li>
+                <?php } ?>
+
+                <?php
                 // header links from Theme panel
                 $first_header_link = get_option('first_header_url');
                 $first_header_link_text = get_option('first_header_url_text');
