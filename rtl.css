@@ -158,3 +158,18 @@ a {
   margin: 0;
   font-weight: normal;
   font-size: 1.1rem; }
+
+#footer {
+  text-align: center;
+  padding: 2rem 0; }
+  #footer .container #footer-divider {
+    border-bottom: 2px solid #eee;
+    margin: 3rem 5% 1rem 5%; }
+  #footer .container ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    #footer .container ul li {
+      display: inline;
+      font-size: 1rem; }
