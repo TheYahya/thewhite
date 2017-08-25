@@ -58,3 +58,12 @@ msgstr "دیدگاه‌ها"
 
 msgid "Tags"
 msgstr "تگ‌ها"
+
+msgid "Error 404"
+msgstr "خطای 404"
+
+msgid "Page not found!"
+msgstr "پیدا نشد!"
+
+msgid "Home page"
+msgstr "صفحه‌ی اصلی"

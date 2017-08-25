@@ -1,10 +1,8 @@
 <?php get_header(); ?>
-<div id="main">
+<div class="container">
     <div class="notf">
-        <p id="first-notf">خطای 404</p>
-        <p id="second-notf">صفحه‌ی مورد نظر پیدا نشد.</p>
-        <p id="second-notf"><a href="<?php echo home_url(); ?>">صفحه اصلی</a></p>
-    </div>
-<div id="delimiter">
-</div>
+        <h1><?php _e('Error 404'); ?></h1>
+        <p><?php _e('Page not found!');?></p>
+        <p><a href="<?php echo home_url(); ?>"><?php _e('Home page');?></a></p>
+    </div> 
 <?php get_footer(); ?>

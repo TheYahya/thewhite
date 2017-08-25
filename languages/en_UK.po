@@ -58,3 +58,12 @@ msgstr "Comments"
 
 msgid "Tags"
 msgstr "Tags"
+
+msgid "Error 404"
+msgstr "Error 404"
+
+msgid "Page not found!"
+msgstr "Page not found!"
+
+msgid "Home page"
+msgstr "Home Page"
