@@ -96,6 +96,16 @@ a {
     -webkit-transform: translate(0.6em, 0.1em);
     transform: translate(0.6em, 0.1em); }
 
+article img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  max-width: 100%; }
+article img.aligncenter {
+  display: block;
+  margin: auto; }
+
 @media all and (max-width: 42rem) {
   html, body {
     font-size: 14px; } }
@@ -173,3 +183,22 @@ a {
     #footer .container ul li {
       display: inline;
       font-size: 1rem; }
+
+.post-date-divider {
+  text-align: center;
+  font-size: .9rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .post-date-divider span {
+    background: #fdfdfd;
+    padding: 0 2rem; }
+
+article {
+  color: #333; }
+  article .post-title {
+    font-size: 2rem; }
+  article .comments-number {
+    color: #555;
+    font-size: .9rem; }

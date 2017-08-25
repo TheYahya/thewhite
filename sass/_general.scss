@@ -9,58 +9,70 @@ table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
     font-family: Sahel;
 }
 html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  background: $body-bg;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: $body-bg;
 }
 a {
-  text-decoration: none;
-  color: $color;
-  &:hover {
-    color: $color-hover;
-  }
+    text-decoration: none;
+    color: $color;
+    &:hover {
+        color: $color-hover;
+    }
 }
 
 .container {
-  max-width: $container-width; 
-  margin: 0 auto;
-  padding: 0 2rem; 
+    max-width: $container-width; 
+    margin: 0 auto;
+    padding: 0 2rem; 
 }
 
 .brackets {
-  padding: 0 10px;
-  &:after, &:before {
-    color: #888;
-    font-weight: 900;
-    position: absolute;
-    @include transition(all, .3s);
-  }
-  &:after {
-    content: '}'; 
-    padding-right: .1em;
-    @include transform-translate(0, .1em);
-  }
-  &:before {
-    content: '{';
-    @include transform-translate(.4em, .1em);
-  }
-  &:hover {
+    padding: 0 10px;
     &:after, &:before {
-      color: #444;
+        color: #888;
+        font-weight: 900;
+        position: absolute;
+        @include transition(all, .3s);
     }
-    &:after { 
-      @include transform-translate(-.2em, .1em);
-      padding-right: 0;
+    &:after {
+        content: '}'; 
+        padding-right: .1em;
+        @include transform-translate(0, .1em);
     }
-    &:before { 
-      @include transform-translate(.6em, .1em);
+    &:before {
+        content: '{';
+        @include transform-translate(.4em, .1em);
     }
-  }
+    &:hover {
+        &:after, &:before {
+        color: #444;
+        }
+        &:after { 
+        @include transform-translate(-.2em, .1em);
+        padding-right: 0;
+        }
+        &:before { 
+        @include transform-translate(.6em, .1em);
+        }
+    }
 }
 
+article {
+    img {
+        @include border-radius(4px);
+        max-width: 100%;
+    }
+    img.aligncenter { 
+        display: block;
+        margin: auto;
+    }
+}
+
+
 @media all and (max-width: $container-width-plus) {
-  html, body {
-    font-size: 14px; 
-  } 
+    html, body {
+        font-size: 14px; 
+    } 
 }

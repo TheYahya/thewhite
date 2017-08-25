@@ -1,0 +1,22 @@
+.post-date-divider { 
+    text-align: center;
+    font-size: .9rem;
+    color: #555; 
+    line-height: .3; 
+    border-bottom: 2px solid #efefef;
+    margin: 3rem 15% 1rem 15%;
+    span {
+        background: $body-bg;
+        padding: 0 2rem;     
+    }
+}
+article { 
+    color: #333;
+    .post-title {
+        font-size: 2rem;
+    }
+    .comments-number {
+        color: #555;
+        font-size: .9rem;
+    }
+}
