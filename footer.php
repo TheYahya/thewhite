@@ -1,8 +1,33 @@
 <footer id="footer">
 <div class="container">
-<div id="footer-divider">
+
+<div class="divider">
+    <span><?php _e('Categories'); ?></span>
 </div>
-<br>
+<ul>
+<?php  foreach ( get_categories() as $category ) {?>
+    <li class="brackets"><a href="<?=get_category_link($category->id)?>"><?=$category->cat_name?></a></li>
+<?php } ?>
+</ul>
+
+<div class="divider">
+    <span><?php _e('Tags')?></span>
+</div>
+<div id="cloud-tags">
+    <?php $args = array(
+        'smallest'                  => 8, 
+        'largest'                   => 12,
+        'unit'                      => 'pt', 
+        'number'                    => 99,  
+        'format'                    => 'flat', 
+        'orderby'                   => 'name',   
+        'link'                      => 'view', 
+        'taxonomy'                  => 'post_tag', 
+    ); ?>
+    <?php wp_tag_cloud( $args ); ?>
+</div> 
+
+<div class="divider"></div>
 <ul>
 <?php       
 // header links from Theme panel 
@@ -54,9 +79,15 @@ if($eighth_footer_link != null && $eighth_footer_link_text != null){ ?>
     <li class="brackets"><a href="<?=$eighth_footer_link?>"><?=$eighth_footer_link_text?></a></li>
 <?php } ?>
 </ul>
-<br><br><br>
+
+<br><br>
 <?=get_option('footer_text')?>
-<br><br><br>
+ 
+
+<div class="divider"></div>
+<p id="copyright-stuff">
+    <a href="https://github.com/TheYahya/thewhite">TheWhite</a> theme, by <a href="http://theyahya.com/">Yahya SayadArbabi</a>
+</p> 
 </div>
 </footer> 
 <?php wp_footer(); ?>

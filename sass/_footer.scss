@@ -1,20 +1,40 @@
 #footer { 
-  text-align: center;
-  padding: 2rem 0;
-  .container { 
-    #footer-divider {  
-      border-bottom: 2px solid #eee;
-      margin: 3rem 5% 1rem 5%; 
+    text-align: center;
+    padding: 2rem 0;
+    .container { 
+        #footer-divider {  
+        border-bottom: 2px solid #eee;
+        margin: 3rem 5% 1rem 5%; 
+        }
+        ul {
+        display: inline-block; 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {  
+            display: inline;
+            font-size: 1rem;
+        }
+        }
     }
-    ul {
-      display: inline-block; 
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      li {  
-        display: inline;
-        font-size: 1rem;
-      }
+    #cloud-tags{
+        width: 90%;
+        margin: auto;
+        .tag-cloud-link {
+            display: inline-block;
+
+            background: #f3f3f3;
+            font-size: .7rem;
+            padding: 0 .4rem;
+            @include border-radius(.3rem);
+            cursor: pointer;
+            margin: .1rem .2rem; 
+            &:hover {
+                background: #eee;
+            }
+        }
     }
-  }
+    #copyright-stuff {
+        font-size: .8rem;
+    }
 }

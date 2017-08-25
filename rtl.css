@@ -96,6 +96,17 @@ a {
     -webkit-transform: translate(0.6em, 0.1em);
     transform: translate(0.6em, 0.1em); }
 
+.divider {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .divider span {
+    background: #fdfdfd;
+    padding: 0 2rem; }
+
 article img {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -194,6 +205,24 @@ blockquote {
     #footer .container ul li {
       display: inline;
       font-size: 1rem; }
+  #footer #cloud-tags {
+    width: 90%;
+    margin: auto; }
+    #footer #cloud-tags .tag-cloud-link {
+      display: inline-block;
+      background: #f3f3f3;
+      font-size: .7rem;
+      padding: 0 .4rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      margin: .1rem .2rem; }
+      #footer #cloud-tags .tag-cloud-link:hover {
+        background: #eee; }
+  #footer #copyright-stuff {
+    font-size: .8rem; }
 
 .post-date-divider {
   text-align: center;

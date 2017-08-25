@@ -59,6 +59,19 @@ a {
     }
 }
 
+.divider { 
+    text-align: center;
+    font-size: 1.4rem;
+    color: #555; 
+    line-height: .3; 
+    border-bottom: 2px solid #efefef;
+    margin: 3rem 15% 1rem 15%;
+    span {
+        background: $body-bg;
+        padding: 0 2rem;     
+    }
+}
+
 article {
     img {
         @include border-radius(4px);
