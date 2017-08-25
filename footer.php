@@ -55,6 +55,8 @@ if($eighth_footer_link != null && $eighth_footer_link_text != null){ ?>
 <?php } ?>
 </ul>
 <br><br><br>
+<?=get_option('footer_text')?>
+<br><br><br>
 </div>
 </footer> 
 <?php wp_footer(); ?>

@@ -37,3 +37,6 @@ msgstr "لینک پانوشت"
 
 msgid "all_settings"
 msgstr "همه‌ی تنظیمات"
+
+msgid "footer_text"
+msgstr "متن پانوشت"

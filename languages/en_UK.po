@@ -37,3 +37,6 @@ msgstr "footer link"
 
 msgid "all_settings"
 msgstr "All settings"
+
+msgid "footer_text"
+msgstr "Footer text"

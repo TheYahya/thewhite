@@ -192,6 +192,13 @@ function display_eighth_footer_link()
     <?php
 }
 
+function display_footer_text()
+{
+	?>
+    	 <?php _e('text'); ?> : <input type="text" name="footer_text" id="footer_text" value="<?php echo get_option('footer_text'); ?>" />
+    <?php
+}
+
 
 /**
  * Add theme panel's field
@@ -253,6 +260,10 @@ function display_theme_panel_fields()
     
     register_setting("section", "eighth_footer_url"); 
     register_setting("section", "eighth_footer_url_text"); 
+
+
+    add_settings_field("footer_text",  __('footer_text') . ' (html)', "display_footer_text", "theme-options", "section");
+    register_setting("section", "footer_text"); 
 }
 add_action("admin_init", "display_theme_panel_fields");
 
