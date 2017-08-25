@@ -1,0 +1,91 @@
+#comments {
+	margin-top: 2em;
+	.comment {
+		border-top: 1px solid #e5e5e5;
+		padding: 1em 0;
+		.head { 
+			.avatar, .comment-author {
+				display: inline-block;
+				vertical-align: middle;			
+			}
+			.avatar {
+				width: 32px;
+				height: 32px;
+				@include border-radius(100%); 
+			}
+			.comment-author {
+				font-size: 0.9em; 
+				margin-right: 0.6em; 
+				font-weight: bold;
+			}
+			.admin-label, .not-approved-lebel {
+				font-size: 0.6em;
+				font-weight: 700;
+				color: #fff;
+				display: inline;
+				padding: 0.2em 0.3em 0.3em;
+				text-align: center;
+				font-family: monospace, Samim;
+				vertical-align: middle;
+				@include border-radius(0.2em);	
+			}
+			.admin-label {
+				background-color: #5b5;
+			}
+			.not-approved-lebel { 
+				background-color: #777;
+			}
+		}
+		.content { 
+			margin-right: 3em;
+			font-size: 0.9em;
+			font-weight: 300;
+		}
+	}
+	#commentform {
+		margin-top: 2em;
+		text-align: center;
+		input, textarea { 
+			margin:0;
+			padding: 0.6em 2%; 
+			border: 1px solid #eee;
+			@include border-radius(4px);
+			font-family: 'Samim';
+		}
+		input { 
+			width: 26.5%; 
+		}
+		input[name=author] {
+			margin-left: 2.5%;
+		}
+		input[name=email], input[name=url] {
+			directly: ltr;
+			text-align: left; 
+		}
+		input[name=url] { 
+			margin-right: 2.5%; 
+		}
+		textarea {
+			display: block;
+			margin: 1em auto;  
+			width: 94%;
+			font-size: 1em;
+			resize: vertical;
+		}
+		input[name=submit] { 
+			background-color: #5b5;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			font-weight: 700;
+			float: left;
+			&:hover {
+				background-color: #5a5;
+			}
+		}
+		#send-button-wrapper { 
+			margin: 1em auto; 
+			width: 98%;
+		}
+	}
+}

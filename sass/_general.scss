@@ -70,6 +70,14 @@ article {
     }
 }
 
+blockquote {
+    background: #f7f7f7;
+    padding: .1rem 1.3rem;
+    @include border-radius(.4rem);
+    border-right: .4rem solid #f1f1f1;
+    margin: .2rem 2.5rem .2rem 0;
+    font-size: 1.1em;
+}
 
 @media all and (max-width: $container-width-plus) {
     html, body {

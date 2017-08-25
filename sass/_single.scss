@@ -10,6 +10,7 @@
         padding: 0 2rem;     
     }
 }
+
 article { 
     color: #333;
     .post-title {
@@ -18,5 +19,17 @@ article {
     .comments-number {
         color: #555;
         font-size: .9rem;
+    }
+}
+
+.post-tag {
+    background: #f7f7f7;
+    font-size: .7rem;
+    padding: 0 .4rem;
+    @include border-radius(.3rem);
+    cursor: pointer;
+    margin: .3rem; 
+    &:hover {
+        background: #eee;
     }
 }

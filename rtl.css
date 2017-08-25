@@ -106,6 +106,17 @@ article img.aligncenter {
   display: block;
   margin: auto; }
 
+blockquote {
+  background: #f7f7f7;
+  padding: .1rem 1.3rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  border-right: .4rem solid #f1f1f1;
+  margin: .2rem 2.5rem .2rem 0;
+  font-size: 1.1em; }
+
 @media all and (max-width: 42rem) {
   html, body {
     font-size: 14px; } }
@@ -202,3 +213,96 @@ article {
   article .comments-number {
     color: #555;
     font-size: .9rem; }
+
+.post-tag {
+  background: #f7f7f7;
+  font-size: .7rem;
+  padding: 0 .4rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: .3rem; }
+  .post-tag:hover {
+    background: #eee; }
+
+#comments {
+  margin-top: 2em; }
+  #comments .comment {
+    border-top: 1px solid #e5e5e5;
+    padding: 1em 0; }
+    #comments .comment .head .avatar, #comments .comment .head .comment-author {
+      display: inline-block;
+      vertical-align: middle; }
+    #comments .comment .head .avatar {
+      width: 32px;
+      height: 32px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%; }
+    #comments .comment .head .comment-author {
+      font-size: 0.9em;
+      margin-right: 0.6em;
+      font-weight: bold; }
+    #comments .comment .head .admin-label, #comments .comment .head .not-approved-lebel {
+      font-size: 0.6em;
+      font-weight: 700;
+      color: #fff;
+      display: inline;
+      padding: 0.2em 0.3em 0.3em;
+      text-align: center;
+      font-family: monospace, Samim;
+      vertical-align: middle;
+      -webkit-border-radius: 0.2em;
+      -moz-border-radius: 0.2em;
+      -ms-border-radius: 0.2em;
+      border-radius: 0.2em; }
+    #comments .comment .head .admin-label {
+      background-color: #5b5; }
+    #comments .comment .head .not-approved-lebel {
+      background-color: #777; }
+    #comments .comment .content {
+      margin-right: 3em;
+      font-size: 0.9em;
+      font-weight: 300; }
+  #comments #commentform {
+    margin-top: 2em;
+    text-align: center; }
+    #comments #commentform input, #comments #commentform textarea {
+      margin: 0;
+      padding: 0.6em 2%;
+      border: 1px solid #eee;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      font-family: 'Samim'; }
+    #comments #commentform input {
+      width: 26.5%; }
+    #comments #commentform input[name=author] {
+      margin-left: 2.5%; }
+    #comments #commentform input[name=email], #comments #commentform input[name=url] {
+      directly: ltr;
+      text-align: left; }
+    #comments #commentform input[name=url] {
+      margin-right: 2.5%; }
+    #comments #commentform textarea {
+      display: block;
+      margin: 1em auto;
+      width: 94%;
+      font-size: 1em;
+      resize: vertical; }
+    #comments #commentform input[name=submit] {
+      background-color: #5b5;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 700;
+      float: left; }
+      #comments #commentform input[name=submit]:hover {
+        background-color: #5a5; }
+    #comments #commentform #send-button-wrapper {
+      margin: 1em auto;
+      width: 98%; }

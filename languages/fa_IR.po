@@ -40,3 +40,21 @@ msgstr "همه‌ی تنظیمات"
 
 msgid "footer_text"
 msgstr "متن پانوشت"
+
+msgid "Author"
+msgstr "نویسنده"
+
+msgid "You're comment not approved yet!"
+msgstr "دیدگاه شما در انتظار بررسی است!"
+
+msgid "Comment..."
+msgstr "دیدگاه..."
+
+msgid "Submit comment"
+msgstr "ارسال نظر"
+
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+msgid "Tags"
+msgstr "تگ‌ها"

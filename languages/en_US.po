@@ -40,3 +40,21 @@ msgstr "All settings"
 
 msgid "footer_text"
 msgstr "Footer text"
+
+msgid "Author"
+msgstr "Author"
+
+msgid "You're comment not approved yet!"
+msgstr "You're comment not approved yet!"
+
+msgid "Comment..."
+msgstr "Comment..."
+
+msgid "Submit comment"
+msgstr "Submit comment"
+
+msgid "Comments"
+msgstr "Comments"
+
+msgid "Tags"
+msgstr "Tags"
