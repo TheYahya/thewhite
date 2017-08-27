@@ -256,6 +256,14 @@ article {
   .post-tag:hover {
     background: #eee; }
 
+article {
+  color: #333; }
+  article .post-title {
+    font-size: 2rem; }
+  article .comments-number {
+    color: #555;
+    font-size: .9rem; }
+
 #comments {
   margin-top: 2em; }
   #comments .comment {
