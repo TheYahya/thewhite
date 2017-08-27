@@ -6,7 +6,7 @@
 </div>
 <ul>
 <?php  foreach ( get_categories() as $category ) {?>
-    <li class="brackets"><a href="<?=get_category_link($category->id)?>"><?=$category->cat_name?></a></li>
+    <li class="brackets"><a href="<?=get_category_link($category->cat_ID)?>"><?=$category->cat_name?></a></li>
 <?php } ?>
 </ul>
 
