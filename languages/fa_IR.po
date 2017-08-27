@@ -67,3 +67,12 @@ msgstr "پیدا نشد!"
 
 msgid "Home page"
 msgstr "صفحه‌ی اصلی"
+
+msgid "Showing months in archive"
+msgstr "نمایش ماه‌ها در آرشیو"
+
+msgid "Active"
+msgstr "فعال"
+
+msgid "Deactive"
+msgstr "غیرفعال"

@@ -67,3 +67,12 @@ msgstr "Page not found!"
 
 msgid "Home page"
 msgstr "Home Page"
+
+msgid "Showing months in archive"
+msgstr "Showing months in archive"
+
+msgid "Active"
+msgstr "Active"
+
+msgid "Deactive"
+msgstr "Deactive"

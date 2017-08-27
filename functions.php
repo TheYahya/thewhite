@@ -92,6 +92,13 @@ function add_theme_menu_item()
 add_action("admin_menu", "add_theme_menu_item");
 
 
+function showing_months_in_archive()
+{
+	?>
+    	<input type="checkbox" name="showing_months_in_archive" id="showing_months_in_archive" <?=(get_option('showing_months_in_archive')) ? 'checked' : ''?> />
+        <?=(get_option('showing_months_in_archive')) ? __('Active') : __('Deactive') ?>
+    <?php
+}
 
 function display_first_header_link()
 {
@@ -207,6 +214,9 @@ function display_theme_panel_fields()
 {
 	add_settings_section("section", __('all_settings'), null, "theme-options");
 	
+    add_settings_field("showing_months_in_archive",  __('Showing months in archive') , "showing_months_in_archive", "theme-options", "section");
+    register_setting("section", "showing_months_in_archive"); 
+
 	add_settings_field("first_header_url", "#1 " . __('header_link'), "display_first_header_link", "theme-options", "section"); 
     add_settings_field("second_header_url", "#2 " . __('header_link'), "display_second_header_link", "theme-options", "section");
     add_settings_field("third_header_url", "#3 " . __('header_link'), "display_third_header_link", "theme-options", "section");
