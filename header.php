@@ -19,8 +19,13 @@
             <ul>
                 <?php 
                 // show pages in header!
-                foreach(get_pages() as $page) { ?>
-                <li class="brackets"><a href="<?=$post->guid?>"?><?=$page->post_title?></a></li>
+                $pages = get_pages(array(
+                  'offset'       => 0,
+                  'post_type'    => 'page',
+                  'post_status'  => 'publish',
+                )); 
+                foreach($pages as $page) { ?>
+                  <li class="brackets"><a href="<?=get_permalink($page->ID);?>"><?=$page->post_title?></a></li>
                 <?php } ?>
 
                 <?php
