@@ -1,6 +1,6 @@
 <?php if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) die ('Please do not load this page directly. Thanks!'); ?>
 <div id="comments"> 
-<h3><?=__('Comments');?></h3>  
+<h3><?php comments_number(__('No Comments'), '1 ' . __('Comment'), '% ' . __('Comments')); ?></h3>  
 <?php  
 	$comments = get_comments(array(
 		'post_id'=>get_the_ID(), 

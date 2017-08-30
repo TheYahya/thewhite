@@ -8,7 +8,7 @@
             <h1 class="post-title">
                 <?php the_title(); ?>
             </h1> 
-            <p class="comments-number"><?php comments_number(); ?></p>
+            <p class="comments-number"><?php comments_number(__('No Comments'), '1 ' . __('Comment'), '% ' . __('Comments')); ?></p>
             <div class="entry-content">
                 <?php the_content(); ?>
             </div>

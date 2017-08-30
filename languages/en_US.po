@@ -76,3 +76,10 @@ msgstr "Active"
 
 msgid "Deactive"
 msgstr "Deactive"
+
+msgid "No Comments"
+msgstr "No Comments"
+
+msgid "Comment"
+msgstr "Comment"
+ 

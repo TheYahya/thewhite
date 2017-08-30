@@ -112,7 +112,8 @@ article img {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 article img.aligncenter {
   display: block;
   margin: auto; }
