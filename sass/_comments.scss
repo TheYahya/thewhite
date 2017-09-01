@@ -89,3 +89,21 @@
 		}
 	}
 }
+
+@media all and (max-width: 440px) {
+	#comments {
+		#commentform { 
+			input { 
+				display: block;
+				margin: 1rem 0!important; 
+				width: 94%;
+				font-size: 1em;
+				resize: vertical; 
+			}
+			input[name=submit] {  
+				float: none;
+				width: 100%; 
+			}
+		}
+	}
+}
