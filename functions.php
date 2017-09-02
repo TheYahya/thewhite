@@ -21,46 +21,6 @@ function remove_more_link_scroll( $link )
 }
 add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
 
-
-/**
- * header title 
- * @param string
- * @param string 
- * @return string
- */
-function wpdocs_theme_name_wp_title( $title, $sep ) 
-{
-    if ( is_feed() ) {
-        return $title;
-    }
-     
-    global $page, $paged;
- 
-    // Add the blog name
-    $title .= get_bloginfo( 'name', 'display' );
- 
-    // Add the blog description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) ) {
-        $title .= " $sep $site_description";
-    }else
-    // Add a page number if necessary:
-    if ( ( $paged >= 2 || $page >= 2 ) ) {
-        $title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
-    }else if (is_archive()){
-        $title = $sep. get_bloginfo( 'name', 'display' ). the_archive_title('', '');
-    }
-    else if ( is_404()){
-        $title = "404". $sep. get_bloginfo( 'name', 'display' );
-    }else if(is_single() || is_page()){
-        $title = $sep. get_bloginfo( 'name', 'display' ). the_title(); 
-    }else {
-        $title .= " $sep $site_description";
-    }
-    return $title;
-}
-add_filter( 'wp_title', 'wpdocs_theme_name_wp_title', 10, 2 );
-
  
 /**
  * theme panel page
