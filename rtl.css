@@ -118,6 +118,20 @@ article img.aligncenter {
   display: block;
   margin: auto; }
 
+.wp-caption {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background: #f4f4f4; }
+  .wp-caption img {
+    width: 100%; }
+  .wp-caption .wp-caption-text {
+    margin: 0 auto;
+    padding-bottom: .3rem;
+    text-align: center;
+    color: #666; }
+
 blockquote {
   background: #f7f7f7;
   padding: .1rem 1.3rem;

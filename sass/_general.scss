@@ -84,6 +84,20 @@ article {
     }
 }
 
+.wp-caption {
+    @include border-radius(4px);
+    background: #f4f4f4;
+    img {
+        width: 100%;
+    }
+    .wp-caption-text {
+        margin: 0 auto;
+        padding-bottom: .3rem;
+        text-align: center;
+        color: #666;
+    }
+}
+
 blockquote {
     background: #f7f7f7;
     padding: .1rem 1.3rem;
