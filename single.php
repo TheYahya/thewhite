@@ -15,9 +15,11 @@
         </article>
         <br><br>
         <p>
-            <?=__('Tags')?>: 
-            <?php foreach (get_the_tags() as $tag) { ?>
-                <a href="<?=get_term_link($tag->term_id)?>" class="post-tag"><?=$tag->name?></a>
+            <?php if (get_the_tags()) {?>
+                <?=__('Tags')?>: 
+                <?php foreach (get_the_tags() as $tag) { ?>
+                    <a href="<?=get_term_link($tag->term_id)?>" class="post-tag"><?=$tag->name?></a>
+                <?php } ?>
             <?php } ?> 
         </p> 
     <?php comments_template(); ?>
