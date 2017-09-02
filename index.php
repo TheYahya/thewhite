@@ -36,7 +36,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     }
     ?>
     <article>
-        <span class="date date-month-day"><?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('d/m')?></span><h3 class="archive__post-title"><a href="<?php the_permalink() ?>"><?=the_title();?></a></h3>
+        <span class="date date-month-day"><?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('m/d')?></span><h3 class="archive__post-title"><a href="<?php the_permalink() ?>"><?=the_title();?></a></h3>
     </article>
 <?php 
 endforeach; 
