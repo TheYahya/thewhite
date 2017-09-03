@@ -82,3 +82,12 @@ msgstr "دیدگاهی وجود ندارد"
 
 msgid "Comment"
 msgstr "دیدگاه"
+
+msgid "Name (Required)"
+msgstr "نام (لازم)"
+
+msgid "Email (Required)"
+msgstr "ایمیل (لازم)"
+
+msgid "Website"
+msgstr "وبسایت"

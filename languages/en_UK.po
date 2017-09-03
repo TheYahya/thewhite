@@ -82,4 +82,12 @@ msgstr "No Comments"
 
 msgid "Comment"
 msgstr "Comment"
- 
+
+msgid "Name (Required)"
+msgstr "Name (Required)"
+
+msgid "Email (Required)"
+msgstr "Email (Required)"
+
+msgid "Website"
+msgstr "Website"

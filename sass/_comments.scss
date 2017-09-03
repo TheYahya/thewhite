@@ -1,56 +1,77 @@
 #comments {
 	margin-top: 2em;
-	.comment {
-		border-top: 1px solid #e5e5e5;
-		padding: 1em 0;
-		.head { 
-			.avatar, .comment-author {
-				display: inline-block;
-				vertical-align: middle;			
-			}
-			.avatar {
-				width: 32px;
-				height: 32px;
-				@include border-radius(100%); 
-			}
+	ol {
+		list-style: none;
+		li {
+			border-top: 1px solid #efefef;
+			padding: 1rem 0;
+
 			.comment-author {
-				font-size: 0.9em; 
-				margin-right: 0.6em; 
-				font-weight: bold;
+				display: flex;
+				img {
+					@include border-radius(100%);
+				}
+				cite { 
+					display: inline-block;
+					margin: .3rem .5rem 0 0; 
+					font-size: .9rem;
+				}
+				.says {
+					display: none;
+				}
 			}
-			.admin-label, .not-approved-lebel {
-				font-size: 0.6em;
-				font-weight: 700;
-				color: #fff;
-				display: inline;
-				padding: 0.2em 0.3em 0.3em;
-				text-align: center;
-				font-family: monospace, Samim;
-				vertical-align: middle;
-				@include border-radius(0.2em);	
+
+			.comment-meta {
+				display: none;
 			}
-			.admin-label {
-				background-color: #5b5;
+
+			p {
+				font-size: .9rem;
 			}
-			.not-approved-lebel { 
+
+			.reply {
+				margin-bottom: .5rem;
+				text-align: left;
+				a {
+					background: $btn-success-bg;
+					padding: 0 .4rem;
+					font-size: .8rem;
+					color: $btn-success-color;
+					@include border-radius($btn-success-border-radius);
+				}
+			}
+
+			.comment-awaiting-moderation {
 				background-color: #777;
+				color: #fff;
+				@include border-radius(.2rem);
+				padding: 0 .3rem;
+				font-size: .7rem;
 			}
-		}
-		.content { 
-			margin-right: 3em;
-			font-size: 0.9em;
-			font-weight: 300;
 		}
 	}
-	#commentform {
-		margin-top: 2em;
-		text-align: center;
+
+	.comment-notes {
+		display: none;
+	}
+	.comment-form-author, .comment-form-email, .comment-form-url {
+		display: inline;
+	} 
+	#respond {
+		text-align: center; 
 		input, textarea { 
 			margin:0;
 			padding: 0.6em 2%; 
 			border: 1px solid #eee;
 			@include border-radius(4px);
 			font-family: 'Samim';
+		}
+		textarea {
+			display: block;
+			margin: 1em auto;  
+			width: 94%;
+			font-size: 1em;
+			resize: vertical;
 		}
 		input { 
 			width: 26.5%; 
@@ -65,27 +86,16 @@
 		input[name=url] { 
 			margin-right: 2.5%; 
 		}
-		textarea {
-			display: block;
-			margin: 1em auto;  
-			width: 94%;
-			font-size: 1em;
-			resize: vertical;
-		}
 		input[name=submit] { 
 			background-color: #5b5;
 			border: none;
+			width: 99%;
 			color: #fff;
 			cursor: pointer;
-			font-weight: 700;
-			float: left;
+			font-weight: 700; 
 			&:hover {
 				background-color: #5a5;
 			}
-		}
-		#send-button-wrapper { 
-			margin: 1em auto; 
-			width: 98%;
 		}
 	}
 }
@@ -99,11 +109,7 @@
 				width: 94%;
 				font-size: 1em;
 				resize: vertical; 
-			}
-			input[name=submit] {  
-				float: none;
-				width: 100%; 
-			}
+			} 
 		}
 	}
 }
