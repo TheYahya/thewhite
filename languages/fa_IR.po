@@ -91,3 +91,6 @@ msgstr "ایمیل (لازم)"
 
 msgid "Website"
 msgstr "وبسایت"
+
+msgid "Showing comments count in archive"
+msgstr "نمایش تعداد کامنت‌ها در آرشیو"

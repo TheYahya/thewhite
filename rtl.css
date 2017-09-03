@@ -206,6 +206,11 @@ blockquote {
   font-weight: normal;
   font-size: 1.1rem; }
 
+.archive-comment-count {
+  display: inline-block;
+  color: #888;
+  font-size: .8rem; }
+
 #footer {
   text-align: center;
   padding: 2rem 0; }

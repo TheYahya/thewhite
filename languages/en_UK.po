@@ -91,3 +91,6 @@ msgstr "Email (Required)"
 
 msgid "Website"
 msgstr "Website"
+
+msgid "Showing comments count in archive"
+msgstr "Showing comments count in archive"

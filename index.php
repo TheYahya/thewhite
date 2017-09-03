@@ -37,6 +37,10 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     ?>
     <article>
         <span class="date date-month-day"><?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('m/d')?></span><h3 class="archive__post-title"><a href="<?php the_permalink() ?>"><?=the_title();?></a></h3>
+        &nbsp;
+        <?php if ( get_option('showing_comments_count_in_archive') ) : ?>
+            <span class="archive-comment-count">(<?=comments_number(0 , 1, '%')?> <?=__('Comment')?>)</span>
+        <?php endif; ?>
     </article>
 <?php 
 endforeach; 
