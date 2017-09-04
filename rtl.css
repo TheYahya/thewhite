@@ -44,7 +44,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  background: #fdfdfd; }
+  background: #fff; }
 
 a {
   text-decoration: none;
@@ -104,7 +104,7 @@ a {
   border-bottom: 2px solid #efefef;
   margin: 3rem 15% 1rem 15%; }
   .divider span {
-    background: #fdfdfd;
+    background: #fff;
     padding: 0 2rem; }
 
 article img {
@@ -183,7 +183,7 @@ blockquote {
   border-bottom: 2px solid #efefef;
   margin: 3rem 15% 1rem 15%; }
   .date-year-divider span {
-    background: #fdfdfd;
+    background: #fff;
     padding: 0 2rem; }
 
 .date-year-divider-first {
@@ -252,7 +252,7 @@ blockquote {
   border-bottom: 2px solid #efefef;
   margin: 3rem 15% 1rem 15%; }
   .post-date-divider span {
-    background: #fdfdfd;
+    background: #fff;
     padding: 0 2rem; }
 
 article {
