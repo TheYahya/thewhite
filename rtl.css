@@ -114,9 +114,16 @@ article img {
   border-radius: 4px;
   max-width: 100%;
   height: auto; }
-article img.aligncenter {
+
+.aligncenter {
   display: block;
   margin: auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
 
 .wp-caption {
   -webkit-border-radius: 4px;

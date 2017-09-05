@@ -78,10 +78,17 @@ article {
         max-width: 100%;
         height: auto;
     }
-    img.aligncenter { 
-        display: block;
-        margin: auto;
-    }
+}
+
+.aligncenter {
+    display: block;
+    margin: auto;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
 }
 
 .wp-caption {
