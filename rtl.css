@@ -14,21 +14,25 @@ Text Domain: Just White & Simple!
   src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot");
   src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot?#iefix") format("embedded-opentype"), url("fonts/sahel/Farsi-Digits/Sahel-FD.woff") format("woff"), url("fonts/sahel/Farsi-Digits/Sahel-FD.ttf") format("truetype");
   font-weight: normal; }
+
 @font-face {
   font-family: Samim;
   src: url("fonts/samim/Samim.eot");
   src: url("fonts/samim/Samim.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Samim.woff") format("woff"), url("fonts/samim/Samim.ttf") format("truetype");
   font-weight: normal; }
+
 @font-face {
   font-family: Samim;
   src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot");
   src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.woff") format("woff"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.ttf") format("truetype");
   font-weight: bold; }
+
 @font-face {
   font-family: Vazir Code;
   src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot");
   src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.woff") format("woff"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.ttf") format("truetype");
   font-weight: normal; }
+
 /** Theme Color Samples :) **/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -153,6 +157,7 @@ blockquote {
 @media all and (max-width: 42rem) {
   html, body {
     font-size: 14px; } }
+
 .header #nav-wrapper {
   background: #fafafa;
   border-bottom: 1px solid #eee;
@@ -167,6 +172,7 @@ blockquote {
     .header #nav-wrapper nav ul li {
       display: inline;
       font-size: 1rem; }
+
 .header #blog-title {
   text-align: center; }
   .header #blog-title h1, .header #blog-title h2 {

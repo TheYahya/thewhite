@@ -29,7 +29,7 @@ function theme_settings_page()
 {
     ?>
 	    <div class="wrap">
-	    <h1><?php _e('theme_panel'); ?></h1>
+	    <h1><?php _e('Theme Panel'); ?></h1>
 	    <form method="post" action="options.php">
 	        <?php
 	            settings_fields("section");
@@ -47,7 +47,7 @@ function theme_settings_page()
  */
 function add_theme_menu_item()
 {
-	add_menu_page(__('theme_panel'), __('theme_panel'), "manage_options", "theme-panel", "theme_settings_page", null, 99);
+	add_menu_page(__('Theme Panel'), __('Theme Panel'), "manage_options", "theme-panel", "theme_settings_page", null, 99);
 }
 add_action("admin_menu", "add_theme_menu_item");
 
@@ -180,7 +180,7 @@ function display_footer_text()
  */
 function display_theme_panel_fields()
 {
-	add_settings_section("section", __('all_settings'), null, "theme-options");
+	add_settings_section("section", __('All settings'), null, "theme-options");
 	
     add_settings_field("showing_months_in_archive",  __('Showing months in archive') , "showing_months_in_archive", "theme-options", "section");
     register_setting("section", "showing_months_in_archive"); 
@@ -188,11 +188,11 @@ function display_theme_panel_fields()
     add_settings_field("showing_comments_count_in_archive",  __('Showing comments count in archive') , "showing_comments_count_in_archive", "theme-options", "section");
     register_setting("section", "showing_comments_count_in_archive"); 
 
-	add_settings_field("first_header_url", "#1 " . __('header_link'), "display_first_header_link", "theme-options", "section"); 
-    add_settings_field("second_header_url", "#2 " . __('header_link'), "display_second_header_link", "theme-options", "section");
-    add_settings_field("third_header_url", "#3 " . __('header_link'), "display_third_header_link", "theme-options", "section");
-    add_settings_field("fourth_header_url", "#4 " . __('header_link'), "display_fourth_header_link", "theme-options", "section");
-    add_settings_field("fifth_header_url", "#5 " . __('header_link'), "display_fifth_header_link", "theme-options", "section");
+	add_settings_field("first_header_url", "#1 " . __('Header link'), "display_first_header_link", "theme-options", "section"); 
+    add_settings_field("second_header_url", "#2 " . __('Header link'), "display_second_header_link", "theme-options", "section");
+    add_settings_field("third_header_url", "#3 " . __('Header link'), "display_third_header_link", "theme-options", "section");
+    add_settings_field("fourth_header_url", "#4 " . __('Header link'), "display_fourth_header_link", "theme-options", "section");
+    add_settings_field("fifth_header_url", "#5 " . __('Header link'), "display_fifth_header_link", "theme-options", "section");
 
     register_setting("section", "first_header_url"); 
     register_setting("section", "first_header_url_text"); 
@@ -209,14 +209,14 @@ function display_theme_panel_fields()
     register_setting("section", "fifth_header_url"); 
     register_setting("section", "fifth_header_url_text"); 
     
-    add_settings_field("first_footer_url", "#1 " . __('footer_link'), "display_first_footer_link", "theme-options", "section"); 
-    add_settings_field("second_footer_url", "#2 " . __('footer_link'), "display_second_footer_link", "theme-options", "section");
-    add_settings_field("third_footer_url", "#3 " . __('footer_link'), "display_third_footer_link", "theme-options", "section");
-    add_settings_field("fourth_footer_url", "#4 " . __('footer_link'), "display_fourth_footer_link", "theme-options", "section");
-    add_settings_field("fifth_footer_url", "#5 " . __('footer_link'), "display_fifth_footer_link", "theme-options", "section");
-    add_settings_field("sixth_footer_url", "#6 " . __('footer_link'), "display_sixth_footer_link", "theme-options", "section");
-    add_settings_field("seventh_footer_url", "#7 " . __('footer_link'), "display_seventh_footer_link", "theme-options", "section");
-    add_settings_field("eighth_footer_url", "#8 " . __('footer_link'), "display_eighth_footer_link", "theme-options", "section");
+    add_settings_field("first_footer_url", "#1 " . __('Footer link'), "display_first_footer_link", "theme-options", "section"); 
+    add_settings_field("second_footer_url", "#2 " . __('Footer link'), "display_second_footer_link", "theme-options", "section");
+    add_settings_field("third_footer_url", "#3 " . __('Footer link'), "display_third_footer_link", "theme-options", "section");
+    add_settings_field("fourth_footer_url", "#4 " . __('Footer link'), "display_fourth_footer_link", "theme-options", "section");
+    add_settings_field("fifth_footer_url", "#5 " . __('Footer link'), "display_fifth_footer_link", "theme-options", "section");
+    add_settings_field("sixth_footer_url", "#6 " . __('Footer link'), "display_sixth_footer_link", "theme-options", "section");
+    add_settings_field("seventh_footer_url", "#7 " . __('Footer link'), "display_seventh_footer_link", "theme-options", "section");
+    add_settings_field("eighth_footer_url", "#8 " . __('Footer link'), "display_eighth_footer_link", "theme-options", "section");
 
     register_setting("section", "first_footer_url"); 
     register_setting("section", "first_footer_url_text"); 
@@ -243,7 +243,7 @@ function display_theme_panel_fields()
     register_setting("section", "eighth_footer_url_text"); 
 
 
-    add_settings_field("footer_text",  __('footer_text') . ' (html)', "display_footer_text", "theme-options", "section");
+    add_settings_field("footer_text",  __('Footer text') . ' (html)', "display_footer_text", "theme-options", "section");
     register_setting("section", "footer_text"); 
 }
 add_action("admin_init", "display_theme_panel_fields");

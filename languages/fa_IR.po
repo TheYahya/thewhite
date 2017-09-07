@@ -20,7 +20,7 @@ msgstr ""
 msgid "Hello"
 msgstr "سلام"
 
-msgid "theme_panel"
+msgid "Theme Panel"
 msgstr "تنظیمات پوسته"
 
 msgid "link"
@@ -29,16 +29,16 @@ msgstr "لینک"
 msgid "text"
 msgstr "متن"
 
-msgid "header_link"
+msgid "Header link"
 msgstr "لینک سربرگ"
 
-msgid "footer_link"
+msgid "Footer link"
 msgstr "لینک پانوشت"
 
-msgid "all_settings"
+msgid "All settings"
 msgstr "همه‌ی تنظیمات"
 
-msgid "footer_text"
+msgid "Footer text"
 msgstr "متن پانوشت"
 
 msgid "Author"

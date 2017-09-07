@@ -1,0 +1,32 @@
+{
+  "name": "thewhite",
+  "version": "3.1.0",
+  "description": "A Simple and white wordpress theme.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheYahya/thewhite.git"
+  },
+  "keywords": [
+    "Theme",
+    "White",
+    "Wordpress",
+    "Simple",
+    "Minimal"
+  ],
+  "author": "Yahya SayadArbabi <yahya.arbabi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheYahya/thewhite/issues"
+  },
+  "homepage": "https://github.com/TheYahya/thewhite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.3"
+  }
+}

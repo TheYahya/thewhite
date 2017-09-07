@@ -20,7 +20,7 @@ msgstr ""
 msgid "Hello"
 msgstr "Hello"
 
-msgid "theme_panel"
+msgid "Theme Panel"
 msgstr "Theme Panel"
 
 msgid "link"
@@ -29,16 +29,16 @@ msgstr "link"
 msgid "text"
 msgstr "text"
 
-msgid "header_link"
+msgid "Header link"
 msgstr "Header link"
 
-msgid "footer_link"
-msgstr "footer link"
+msgid "Footer link"
+msgstr "Footer link"
 
-msgid "all_settings"
+msgid "All settings"
 msgstr "All settings"
 
-msgid "footer_text"
+msgid "Footer text"
 msgstr "Footer text"
 
 msgid "Author"
