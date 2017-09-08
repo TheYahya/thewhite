@@ -11,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
 html, body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 17px;
     background: $body-bg;
 }
 a {
@@ -20,6 +20,35 @@ a {
     &:hover {
         color: $color-hover;
     }
+}
+
+hr {
+  border: 0; 
+  height: 1px; 
+  @include background-image-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+ 
+blockquote {
+    display: block;
+    background: #f8f8f8;
+    @include border-radius(.4rem);
+    padding: 2rem 4rem 1rem 1.5rem;
+    margin: .2rem 2.5rem .2rem 0;  
+    border-left: .2rem solid $color-light; 
+    border-right: .4rem solid $color-light;
+    position: relative;  
+    font-size: 110%;
+}
+
+blockquote::before {
+	content: "\201C";
+    font-size: 4rem;
+	color: $color-light;
+	line-height: 1;
+	font-weight: bold;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
 }
 
 .container {
@@ -105,17 +134,8 @@ article {
     }
 }
 
-blockquote {
-    background: #f7f7f7;
-    padding: .1rem 1.3rem;
-    @include border-radius(.4rem);
-    border-right: .4rem solid #f1f1f1;
-    margin: .2rem 2.5rem .2rem 0;
-    font-size: 1.1em;
-}
-
 @media all and (max-width: $container-width-plus) {
     html, body {
-        font-size: 14px; 
+        font-size: 110%; 
     } 
 }

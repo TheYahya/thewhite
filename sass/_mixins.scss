@@ -25,3 +25,10 @@
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
+
+@mixin background-image-linear-gradient($direction, $color-stop1, $color-stop2, $color-stop3) {
+    background-image: -webkit-linear-gradient($direction, $color-stop1, $color-stop2, $color-stop3);
+    background-image: -moz-linear-gradient($direction, $color-stop1, $color-stop2, $color-stop3);
+    background-image: -ms-linear-gradient($direction, $color-stop1, $color-stop2, $color-stop3);
+    background-image: -o-linear-gradient($direction, $color-stop1, $color-stop2, $color-stop3); 
+}
