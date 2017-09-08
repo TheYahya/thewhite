@@ -42,3 +42,9 @@
   color: #888;
   font-size: .8rem;
 }
+.meta-tag-title {
+  color: #fff;
+  @include border-radius(4px);
+  font-size: .7rem;
+  padding: 0 .4rem;
+}

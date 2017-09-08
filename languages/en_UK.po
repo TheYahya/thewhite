@@ -94,3 +94,15 @@ msgstr "Website"
 
 msgid "Showing comments count in archive"
 msgstr "Showing comments count in archive"
+
+msgid "Custom style"
+msgstr "Custom style"
+
+msgid "Tag title"
+msgstr "Tag title"
+
+msgid "Tag color"
+msgstr "Tag color"
+
+msgid "Meta tag option"
+msgstr "Meta tag option"

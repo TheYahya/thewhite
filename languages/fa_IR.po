@@ -94,3 +94,15 @@ msgstr "وبسایت"
 
 msgid "Showing comments count in archive"
 msgstr "نمایش تعداد کامنت‌ها در آرشیو"
+
+msgid "Custom style"
+msgstr "استایل"
+
+msgid "Tag title"
+msgstr "عنوان تگ"
+
+msgid "Tag color"
+msgstr "رنگ تگ"
+
+msgid "Meta tag option"
+msgstr "قابلیت متا تگ"

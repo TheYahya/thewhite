@@ -60,6 +60,14 @@ function showing_months_in_archive()
     <?php
 }
 
+function meta_tag_option()
+{
+	?>
+    	<input type="checkbox" name="meta_tag_option" id="meta_tag_option" <?=(get_option('meta_tag_option')) ? 'checked' : ''?> />
+        <?=(get_option('meta_tag_option')) ? __('Active') : __('Deactive') ?>
+    <?php
+}
+
 function showing_comments_count_in_archive()
 {
 	?>
@@ -184,6 +192,9 @@ function display_theme_panel_fields()
 	
     add_settings_field("showing_months_in_archive",  __('Showing months in archive') , "showing_months_in_archive", "theme-options", "section");
     register_setting("section", "showing_months_in_archive"); 
+    		
+    add_settings_field("meta_tag_option",  __('Meta tag option') , "meta_tag_option", "theme-options", "section");
+    register_setting("section", "meta_tag_option"); 
     	
     add_settings_field("showing_comments_count_in_archive",  __('Showing comments count in archive') , "showing_comments_count_in_archive", "theme-options", "section");
     register_setting("section", "showing_comments_count_in_archive"); 
@@ -249,3 +260,58 @@ function display_theme_panel_fields()
 add_action("admin_init", "display_theme_panel_fields");
 
  
+/**
+ * Adding extra fields to have metas for posts.
+ */
+function prfx_custom_meta() {
+    if ( ! get_option('meta_tag_option') ) {
+        return;
+    }
+    add_meta_box( 'prfx_meta', __( 'Custom style' ), 'prfx_meta_callback', 'post' );
+}
+add_action('add_meta_boxes', 'prfx_custom_meta' );
+
+
+/**
+ * the presentaion of custom meta boxs in new_post
+ */
+function prfx_meta_callback( $post ) {
+    wp_nonce_field( basename( __FILE__ ), 'prfx_nonce' );
+    $prfx_stored_meta = get_post_meta( $post->ID );
+    ?>
+    <p> 
+        <label for="meta-price" class="prfx-row-title"><?php _e( 'Tag title' )?></label>
+        <input type="text" name="meta-tag-title" id="meta-tag-title" value="<?php if ( isset ( $prfx_stored_meta['meta-tag-title'] ) ) echo $prfx_stored_meta['meta-tag-title'][0]; ?>" />
+        
+        <label for="meta-distance" class="prfx-row-title"><?php echo __( 'Tag color' ) . ' (hex, i.e: eeffdd)' ?></label>
+        <input type="text" name="meta-tag-color" id="meta-tag-color" value="<?php if ( isset ( $prfx_stored_meta['meta-tag-color'] ) ) echo $prfx_stored_meta['meta-tag-color'][0]; ?>" />
+        
+    </p>   
+    <?php
+}
+
+
+/**
+ * Saves the custom meta input
+ */
+add_action( 'save_post', 'prfx_meta_save' );
+function prfx_meta_save( $post_id ) {
+    // Checks save status
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST[ 'prfx_nonce' ] ) && wp_verify_nonce( $_POST[ 'prfx_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+    // Exits script depending on save status
+    if ( $is_autosave || $is_revision || ! $is_valid_nonce ) {
+        return;
+    }
+
+    // Checks for input and sanitizes/saves if needed
+    if( isset( $_POST[ 'meta-tag-title'])) {
+        update_post_meta( $post_id, 'meta-tag-title', sanitize_text_field( $_POST[ 'meta-tag-title' ] ) );
+    }
+
+    if(isset($_POST['meta-tag-color'])) {
+        update_post_meta( $post_id, 'meta-tag-color', sanitize_text_field( $_POST[ 'meta-tag-color' ] ) );
+    } 
+}

@@ -34,9 +34,20 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         $the_month = get_the_date('M');
         echo $the_month . '<br>';
     }
+
+    $tag_title = get_post_meta(get_the_ID(), 'meta-tag-title', true);
+    $tag_color = get_post_meta(get_the_ID(), 'meta-tag-color', true);
     ?>
     <article>
-        <span class="date date-month-day"><?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('m/d')?></span><h3 class="archive__post-title"><a href="<?php the_permalink() ?>"><?=the_title();?></a></h3>
+        <span class="date date-month-day">
+            <?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('m/d')?>
+        </span>
+        <?php if ( $tag_title && get_option('meta_tag_option') ) : ?>
+            <span class="meta-tag-title" style="background-color: #<?=$tag_color?>"><?=$tag_title?></span>
+        <?php endif; ?>
+        <h3 class="archive__post-title">
+            <a href="<?php the_permalink() ?>"><?=the_title();?></a>
+        </h3>
         &nbsp;
         <?php if ( get_option('showing_comments_count_in_archive') ) : ?>
             <span class="archive-comment-count">(<?=comments_number(0 , 1, '%')?> <?=__('Comment')?>)</span>

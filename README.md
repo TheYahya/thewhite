@@ -13,7 +13,7 @@ Work in progress.
 ## To-Do list
 
 - [x] Automate the compile of sass and language files with gulp.
-- [ ] Add a label option for post that can be recognize in archive(index).
+- [x] Add a label option for post that can be recognize in archive(index).
 - [ ] Added fully english support and ltr.
 - [ ] Clean up the fonts mess!
 - [ ] Make header & footer links dynamics.
