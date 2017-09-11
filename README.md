@@ -7,8 +7,7 @@ Simple wordpress theme.
 Work in progress.
 
 ## Screenshot
-
-<a href="https://theyahya.com/blog/"><img src="https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png" width="480px"/></a>
+![Screenshot](https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png)
 
 ## To-Do list
 
