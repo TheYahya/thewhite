@@ -1,13 +1,15 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp  = require('gulp');
+var sass  = require('gulp-sass');
 var shell = require('gulp-shell');
 
+// Compiling sass files
 gulp.task('sass', function() {
   return gulp.src('./sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./'));
 });
 
+// Make binary files for languages
 gulp.task('languages', function () {
   return gulp.src('./languages/*')
     .pipe(shell([
@@ -15,7 +17,8 @@ gulp.task('languages', function () {
     ]));
 });
 
-gulp.task('watch', function() {
+// gulp watchers
+gulp.task('default', function() {
   gulp.watch('./sass/*', ['sass']).addListener;
   gulp.watch('./languages/*', ['languages']).addListener;
 });
