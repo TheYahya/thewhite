@@ -106,3 +106,6 @@ msgstr "رنگ تگ"
 
 msgid "Meta tag option"
 msgstr "قابلیت متا تگ"
+
+msgid "Comment (Required)"
+msgstr "نظر شما (لازم)"

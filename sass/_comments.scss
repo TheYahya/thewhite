@@ -51,6 +51,19 @@
 		}
 	}
 
+	.bypostauthor {
+		.fn::after {
+			content: 'author';
+			display: inline-block;
+			margin: 0 .5rem;
+			background: $color-hover;
+			font-size: .5rem;
+			color: #fff;
+			@include border-radius(.1rem);
+			padding: 0 .2rem;
+		}
+	}
+
 	.comment-notes {
 		display: none;
 	}

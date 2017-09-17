@@ -106,3 +106,6 @@ msgstr "Tag color"
 
 msgid "Meta tag option"
 msgstr "Meta tag option"
+
+msgid "Comment (Required)"
+msgstr "Comment (Required)"

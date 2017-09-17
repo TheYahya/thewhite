@@ -373,6 +373,18 @@ article {
         border-radius: 0.2rem;
         padding: 0 .3rem;
         font-size: .7rem; }
+  #comments .bypostauthor .fn::after {
+    content: 'author';
+    display: inline-block;
+    margin: 0 .5rem;
+    background: #156770;
+    font-size: .5rem;
+    color: #fff;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    padding: 0 .2rem; }
   #comments .comment-notes {
     display: none; }
   #comments .comment-form-author, #comments .comment-form-email, #comments .comment-form-url {
