@@ -1,35 +1,45 @@
 .post-date-divider { 
-    text-align: center;
-    font-size: .9rem;
-    color: #555; 
-    line-height: .3; 
-    border-bottom: 2px solid #efefef;
-    margin: 3rem 15% 1rem 15%;
-    span {
-        background: $body-bg;
-        padding: 0 2rem;     
-    }
+  text-align: center;
+  font-size: .9rem;
+  color: #555; 
+  line-height: .3; 
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%;
+  span {
+    background: $body-bg;
+    padding: 0 2rem;     
+  }
+}
+
+@media all and (max-width: 560px) {
+  .post-date-divider { 
+    font-size: .8rem;
+    margin: 3rem 0 1rem 0; 
+      span {
+        padding: 0 1rem;
+      }
+  }
 }
 
 article { 
-    color: #333;
-    .post-title {
-        font-size: 2rem;
-    }
-    .comments-number {
-        color: #555;
-        font-size: .9rem;
-    }
+  color: #333;
+  .post-title {
+    font-size: 2rem;
+  }
+  .comments-number {
+    color: #555;
+    font-size: .9rem;
+  }
 }
 
 .post-tag {
-    background: #f7f7f7;
-    font-size: .7rem;
-    padding: 0 .4rem;
-    @include border-radius(.3rem);
-    cursor: pointer;
-    margin: .3rem; 
-    &:hover {
-        background: #eee;
-    }
+  background: #f7f7f7;
+  font-size: .7rem;
+  padding: 0 .4rem;
+  @include border-radius(.3rem);
+  cursor: pointer;
+  margin: .3rem; 
+  &:hover {
+    background: #eee;
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "thewhite",
-  "version": "3.1.0",
+  "version": "3.2.1",
   "description": "A Simple and white wordpress theme.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
