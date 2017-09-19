@@ -23,9 +23,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     <?php
     if ( $the_year != get_the_date('Y') ) {
         $the_year = get_the_date('Y'); 
-        echo ($first_year) ? 
-            '<div class="date-year-divider"><span>' . $the_year . '</span></div>' : 
-            '<div class="date-year-divider"><span>' . $the_year . '</span></div>';
+        echo '<div class="date-year-divider"><span>' . $the_year . '</span></div>';
         
         $first_year = false;
     }
@@ -40,7 +38,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     ?>
     <article>
         <span class="date date-month-day">
-            <?=(get_option('showing_months_in_archive')) ? the_date('d') : the_date('m/d')?>
+            <?=(get_option('showing_months_in_archive')) ? get_the_date('d') : get_the_date('m/d')?>
         </span>
         <?php if ( $tag_title && get_option('meta_tag_option') ) : ?>
             <span class="meta-tag-title" style="background-color: #<?=$tag_color?>"><?=$tag_title?></span>
