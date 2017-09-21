@@ -43,6 +43,24 @@ function theme_settings_page()
 
 
 /**
+ * Adding query string to load new version not the cache one
+ */
+function stylesheet_uri_versioner($stylesheet_uri) {
+    return add_query_arg( array( 'v' => wp_get_theme()->version), $stylesheet_uri);
+}
+add_filter('stylesheet_uri', 'stylesheet_uri_versioner');
+
+
+/**
+ * Adding query string to load new version not the cache one
+ */
+function locale_stylesheet_uri_versioner($localized_stylesheet_uri) {
+    return add_query_arg( array('v' => wp_get_theme()->version), $localized_stylesheet_uri );
+}
+add_filter( 'locale_stylesheet_uri', 'locale_stylesheet_uri_versioner' );
+
+
+/**
  * Add theme pannel to the wordpress dashboad menu
  */
 function add_theme_menu_item()

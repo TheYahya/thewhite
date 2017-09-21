@@ -3,7 +3,7 @@ Theme Name: TheWhite
 Author: Yahya SayadArabbi
 Author URI: http://theyahya.com
 Description: Designded By Yahya SayadArbabi, Aban-e 1394 - v3.0 (Shahrivar-e 1396).
-Version: 3.2.2
+Version: 3.2.1
 License:  The MIT License (MIT)
 License URI: https://mit-license.org/
 Tags: personal, white, simple, persian, farsi
@@ -52,9 +52,9 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #02b875; }
+  color: #1D8E9B; }
   a:hover {
-    color: #1c9963; }
+    color: #156770; }
 
 hr {
   border: 0;
@@ -73,15 +73,15 @@ blockquote {
   border-radius: 0.4rem;
   padding: 2rem 4rem 1rem 1.5rem;
   margin: .2rem 2.5rem .2rem 0;
-  border-left: 0.2rem solid #0b7;
-  border-right: 0.4rem solid #0b7;
+  border-left: 0.2rem solid #5E9CA3;
+  border-right: 0.4rem solid #5E9CA3;
   position: relative;
   font-size: 110%; }
 
 blockquote::before {
   content: "\201C";
   font-size: 4rem;
-  color: #0b7;
+  color: #5E9CA3;
   line-height: 1;
   font-weight: bold;
   position: absolute;
@@ -182,7 +182,7 @@ article img {
 .header #nav-wrapper {
   background: #fafafa;
   border-bottom: 1px solid #eee;
-  border-top: 3px solid #02b875; }
+  border-top: 3px solid #1D8E9B; }
   .header #nav-wrapper .container {
     padding: .5rem 0; }
   .header #nav-wrapper nav ul {
@@ -363,7 +363,7 @@ article {
         margin-bottom: .5rem;
         text-align: left; }
         #comments ol li .reply a {
-          background: #1c9963;
+          background: #5b5;
           padding: 0 .4rem;
           font-size: .8rem;
           color: #fff;
@@ -384,7 +384,7 @@ article {
     content: 'author';
     display: inline-block;
     margin: 0 .5rem;
-    background: #1c9963;
+    background: #156770;
     font-size: .5rem;
     color: #fff;
     -webkit-border-radius: 0.1rem;
