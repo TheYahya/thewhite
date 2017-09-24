@@ -39,9 +39,15 @@
 }
 .archive-comment-count {
   display: inline-block;
-  color: #888;
   font-size: .7rem;
   vertical-align: middle;
+  color: #fff;
+  @include border-radius(10px);
+  padding: 0.15rem .4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  background-color: #888; 
 }
 .meta-tag-title {
   color: #fff;

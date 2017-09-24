@@ -48,7 +48,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         </h3>
         &nbsp;
         <?php if ( get_option('showing_comments_count_in_archive') ) : ?>
-            <span class="archive-comment-count">(<?=comments_number(0 , 1, '%')?> <?=__('Comment')?>)</span>
+            <span class="archive-comment-count"><?= comments_number(0 , 1, '%') ?></span>
         <?php endif; ?>
     </article>
 <?php 
