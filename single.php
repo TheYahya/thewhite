@@ -16,9 +16,9 @@
         <br><br>
         <p>
             <?php if (get_the_tags()) {?>
-                <?=__('Tags')?>: 
+                <?php _e('Tags')?>:
                 <?php foreach (get_the_tags() as $tag) { ?>
-                    <a href="<?=get_term_link($tag->term_id)?>" class="post-tag"><?=$tag->name?></a>
+                    <a href="<?php echo get_term_link($tag->term_id)?>" class="post-tag"><?php echo $tag->name?></a>
                 <?php } ?>
             <?php } ?> 
         </p> 

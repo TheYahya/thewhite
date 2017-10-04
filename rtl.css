@@ -427,7 +427,7 @@ article {
     #comments #respond input[name=author] {
       margin-left: 2.5%; }
     #comments #respond input[name=email], #comments #respond input[name=url] {
-      directly: ltr;
+      direction: ltr;
       text-align: left; }
     #comments #respond input[name=url] {
       margin-right: 2.5%; }
