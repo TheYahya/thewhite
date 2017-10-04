@@ -8,7 +8,7 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <link href="<?php echo get_bloginfo('rss2_url');  ?>" title="<?php bloginfo('name'); ?>" type="application/rss+xml" rel="alternate">
+  <link href="<?= get_bloginfo('rss2_url'); ?>" title="<?php bloginfo('name'); ?>" type="application/rss+xml" rel="alternate">
   <?php wp_head(); ?>
 </head>
 <body>
@@ -26,7 +26,7 @@
                   'post_status'  => 'publish',
                 )); 
                 foreach($pages as $page) { ?>
-                  <li class="brackets"><a href="<?=get_permalink($page->ID);?>"><?=$page->post_title?></a></li>
+                  <li class="brackets"><a href="<?= get_permalink($page->ID); ?>"><?= $page->post_title ?></a></li>
                 <?php } ?>
 
                 <?php
@@ -35,38 +35,38 @@
                 $first_header_link_text = get_option('first_header_url_text');
                 if($first_header_link != null && $first_header_link_text != null){?>
                 <li class="brackets"><a href="<?=$first_header_link?>"?><?=$first_header_link_text?></a></li>
-                <?}
+                <?php }
 
                 $second_header_url = get_option('second_header_url');
                 $second_header_url_text = get_option('second_header_url_text');
                 if($second_header_url != null && $second_header_url_text != null){?>
                 <li class="brackets"><a href="<?=$second_header_url?>"><?=$second_header_url_text?></a></li> 
-                <?}
+                <?php }
 
                 $third_header_url = get_option('third_header_url');
                 $third_header_url_text = get_option('third_header_url_text');
                 if($third_header_url != null && $third_header_url_text != null){?>
                 <li class="brackets"><a href="<?=$third_header_url?>"><?=$third_header_url_text?></a></li>
-                <?}
+                <?php }
 
                 $fourth_header_url = get_option('fourth_header_url');
                 $fourth_header_url_text = get_option('fourth_header_url_text');
                 if($fourth_header_url != null && $fourth_header_url_text != null){?>
                 <li class="brackets"><a href="<?=$fourth_header_url?>"><?=$fourth_header_url_text?></a></li>
-                <?}
+                <?php }
 
                 $fifth_header_url = get_option('fifth_header_url');
                 $fifth_header_url_text = get_option('fifth_header_url_text');
-                if($fifth_header_url != null && $fifth_header_url_text != null){?>
+                if ($fifth_header_url != null && $fifth_header_url_text != null ) { ?>
                 <li class="brackets"><a href="<?=$fifth_header_url?>"><?=$fifth_header_url_text?></a></li>
-                <?}
+                <?php }
               ?>
             </ul>
           </nav>
         </section><!--/.container-->
       </div><!--/#nav-wrapper-->
     <div id="blog-title">
-        <h1 class="brackets"><a href="<?php echo home_url(); ?>"><? bloginfo('name');?></a><h1>
-        <h2><? bloginfo('description');?></h2> 
+        <h1 class="brackets"><a href="<?= home_url(); ?>"><?php bloginfo('name');?></a><h1>
+        <h2><?php bloginfo('description');?></h2> 
     </div><!--/#blog-title-->
   </header><!--/.header-->
