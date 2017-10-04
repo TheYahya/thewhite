@@ -8,7 +8,7 @@ if ( post_password_required() ) {
 
 		<?php if ( have_comments() ) : ?>
 			<h2 class="comments-title">
-				<?=__('Comments');?>
+				<?php __('Comments');?>
 			</h2>
 
 			<ol class="comment-list">

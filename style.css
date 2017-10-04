@@ -3,18 +3,37 @@ Theme Name: TheWhite
 Author: Yahya SayadArabbi
 Author URI: http://theyahya.com
 Description: Designded By Yahya SayadArbabi, Aban-e 1394 - v3.0 (Shahrivar-e 1396).
-Version: 3.2.3
+Version: 3.2.1
 License:  The MIT License (MIT)
 License URI: https://mit-license.org/
 Tags: personal, white, simple, persian, farsi
 Text Domain: Just White & Simple!
 */
 @font-face {
-  font-family: Vazir;
-  src: url("fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot");
-  src: url("fonts/vazir/Farsi-Digits/Vazir-Light-FD.eot?#iefix") format("embedded-opentype"), url("fonts/vazir/Farsi-Digits/Vazir-Light-FD.woff") format("woff"), url("fonts/vazir/Farsi-Digits/Vazir-Light-FD.ttf") format("truetype");
+  font-family: Sahel;
+  src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot");
+  src: url("fonts/sahel/Farsi-Digits/Sahel-FD.eot?#iefix") format("embedded-opentype"), url("fonts/sahel/Farsi-Digits/Sahel-FD.woff") format("woff"), url("fonts/sahel/Farsi-Digits/Sahel-FD.ttf") format("truetype");
   font-weight: normal; }
 
+@font-face {
+  font-family: Samim;
+  src: url("fonts/samim/Samim.eot");
+  src: url("fonts/samim/Samim.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Samim.woff") format("woff"), url("fonts/samim/Samim.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: Samim;
+  src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot");
+  src: url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.woff") format("woff"), url("fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.ttf") format("truetype");
+  font-weight: bold; }
+
+@font-face {
+  font-family: Vazir Code;
+  src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot");
+  src: url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot?#iefix") format("embedded-opentype"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.woff") format("woff"), url("fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.ttf") format("truetype");
+  font-weight: normal; }
+
+/** Theme Color Samples :) **/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,4 +42,409 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
-  font-family: Vazir; }
+  font-family: Sahel; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #1D8E9B; }
+  a:hover {
+    color: #156770; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+
+blockquote {
+  display: block;
+  background: #f8f8f8;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  padding: 2rem 4rem 1rem 1.5rem;
+  margin: .2rem 2.5rem .2rem 0;
+  border-left: 0.2rem solid #5E9CA3;
+  border-right: 0.4rem solid #5E9CA3;
+  position: relative;
+  font-size: 110%; }
+
+blockquote::before {
+  content: "\201C";
+  font-size: 4rem;
+  color: #5E9CA3;
+  line-height: 1;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  top: 1rem; }
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.brackets {
+  padding: 0 10px; }
+  .brackets:after, .brackets:before {
+    color: #888;
+    font-weight: 900;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .brackets:after {
+    content: '}';
+    padding-right: .1em;
+    -moz-transform: translate(0, 0.1em);
+    -ms-transform: translate(0, 0.1em);
+    -o-transform: translate(0, 0.1em);
+    -webkit-transform: translate(0, 0.1em);
+    transform: translate(0, 0.1em); }
+  .brackets:before {
+    content: '{';
+    -moz-transform: translate(0.4em, 0.1em);
+    -ms-transform: translate(0.4em, 0.1em);
+    -o-transform: translate(0.4em, 0.1em);
+    -webkit-transform: translate(0.4em, 0.1em);
+    transform: translate(0.4em, 0.1em); }
+  .brackets:hover:after, .brackets:hover:before {
+    color: #444; }
+  .brackets:hover:after {
+    -moz-transform: translate(-0.2em, 0.1em);
+    -ms-transform: translate(-0.2em, 0.1em);
+    -o-transform: translate(-0.2em, 0.1em);
+    -webkit-transform: translate(-0.2em, 0.1em);
+    transform: translate(-0.2em, 0.1em);
+    padding-right: 0; }
+  .brackets:hover:before {
+    -moz-transform: translate(0.6em, 0.1em);
+    -ms-transform: translate(0.6em, 0.1em);
+    -o-transform: translate(0.6em, 0.1em);
+    -webkit-transform: translate(0.6em, 0.1em);
+    transform: translate(0.6em, 0.1em); }
+
+.divider {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .divider span {
+    background: #fff;
+    padding: 0 2rem; }
+
+article img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto; }
+
+.aligncenter {
+  display: block;
+  margin: auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+.wp-caption {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  background: #f4f4f4; }
+  .wp-caption img {
+    width: 100%; }
+  .wp-caption .wp-caption-text {
+    margin: 0 auto;
+    padding-bottom: .3rem;
+    text-align: center;
+    color: #666; }
+
+@media all and (max-width: 42rem) {
+  html, body {
+    font-size: 110%; } }
+
+.header #nav-wrapper {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  border-top: 3px solid #1D8E9B; }
+  .header #nav-wrapper .container {
+    padding: .5rem 0; }
+  .header #nav-wrapper nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .header #nav-wrapper nav ul li {
+      display: inline;
+      font-size: 1rem; }
+
+.header #blog-title {
+  text-align: center; }
+  .header #blog-title h1, .header #blog-title h2 {
+    padding: 0;
+    margin: 0; }
+  .header #blog-title h1 {
+    display: inline-block; }
+  .header #blog-title h2 {
+    color: #aaa;
+    font-size: 1.2rem; }
+
+.date {
+  width: 4rem;
+  display: inline-block; }
+
+.date-year-divider {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .date-year-divider span {
+    background: #fff;
+    padding: 0 2rem; }
+
+.date-year-divider-first {
+  border-bottom: none; }
+
+.date-year {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444; }
+
+.date-month-day {
+  color: #999;
+  display: inline-block;
+  font-size: 1.1rem; }
+
+.archive__post-title {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.1rem; }
+
+.archive-comment-count {
+  display: inline-block;
+  font-size: .7rem;
+  vertical-align: middle;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0.15rem .4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  background-color: #888; }
+
+.meta-tag-title {
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  font-size: .7rem;
+  padding: 0 .4rem; }
+
+#footer {
+  text-align: center;
+  padding: 2rem 0; }
+  #footer .container #footer-divider {
+    border-bottom: 2px solid #eee;
+    margin: 3rem 5% 1rem 5%; }
+  #footer .container ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    #footer .container ul li {
+      display: inline;
+      font-size: 1rem; }
+  #footer #cloud-tags {
+    width: 90%;
+    margin: auto; }
+    #footer #cloud-tags .tag-cloud-link {
+      display: inline-block;
+      background: #f3f3f3;
+      font-size: .7rem;
+      padding: 0 .4rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      margin: .1rem .2rem; }
+      #footer #cloud-tags .tag-cloud-link:hover {
+        background: #eee; }
+  #footer #copyright-stuff {
+    font-size: .8rem; }
+
+.post-date-divider {
+  text-align: center;
+  font-size: .9rem;
+  color: #555;
+  line-height: .3;
+  border-bottom: 2px solid #efefef;
+  margin: 3rem 15% 1rem 15%; }
+  .post-date-divider span {
+    background: #fff;
+    padding: 0 2rem; }
+
+@media all and (max-width: 560px) {
+  .post-date-divider {
+    font-size: .8rem;
+    margin: 3rem 0 1rem 0; }
+    .post-date-divider span {
+      padding: 0 1rem; } }
+
+article {
+  color: #333; }
+  article .post-title {
+    font-size: 2rem; }
+  article .comments-number {
+    color: #555;
+    font-size: .9rem; }
+
+.post-tag {
+  background: #f7f7f7;
+  font-size: .7rem;
+  padding: 0 .4rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: .3rem; }
+  .post-tag:hover {
+    background: #eee; }
+
+article {
+  color: #333; }
+  article .post-title {
+    font-size: 2rem; }
+  article .comments-number {
+    color: #555;
+    font-size: .9rem; }
+
+#comments {
+  margin-top: 2em; }
+  #comments ol {
+    list-style: none; }
+    #comments ol li {
+      border-top: 1px solid #efefef;
+      padding: 1rem 0; }
+      #comments ol li .comment-author {
+        display: flex; }
+        #comments ol li .comment-author img {
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          border-radius: 100%; }
+        #comments ol li .comment-author cite {
+          display: inline-block;
+          margin: .3rem .5rem 0 0;
+          font-size: .9rem; }
+        #comments ol li .comment-author .says {
+          display: none; }
+      #comments ol li .comment-meta {
+        display: none; }
+      #comments ol li p {
+        font-size: .9rem; }
+      #comments ol li .reply {
+        margin-bottom: .5rem;
+        text-align: left; }
+        #comments ol li .reply a {
+          background: #5b5;
+          padding: 0 .4rem;
+          font-size: .8rem;
+          color: #fff;
+          -webkit-border-radius: 0.2rem;
+          -moz-border-radius: 0.2rem;
+          -ms-border-radius: 0.2rem;
+          border-radius: 0.2rem; }
+      #comments ol li .comment-awaiting-moderation {
+        background-color: #777;
+        color: #fff;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        border-radius: 0.2rem;
+        padding: 0 .3rem;
+        font-size: .7rem; }
+  #comments .bypostauthor .fn::after {
+    content: 'author';
+    display: inline-block;
+    margin: 0 .5rem;
+    background: #156770;
+    font-size: .5rem;
+    color: #fff;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    padding: 0 .2rem; }
+  #comments .comment-notes {
+    display: none; }
+  #comments .comment-form-author, #comments .comment-form-email, #comments .comment-form-url {
+    display: inline; }
+  #comments #respond {
+    text-align: center; }
+    #comments #respond input, #comments #respond textarea {
+      margin: 0;
+      padding: 0.6em 2%;
+      border: 1px solid #eee;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      border-radius: 4px;
+      font-family: 'Samim'; }
+    #comments #respond textarea {
+      display: block;
+      margin: 1em auto;
+      width: 94%;
+      font-size: 1em;
+      resize: vertical; }
+    #comments #respond input {
+      width: 26.5%; }
+    #comments #respond input[name=author] {
+      margin-left: 2.5%; }
+    #comments #respond input[name=email], #comments #respond input[name=url] {
+      direction: ltr;
+      text-align: left; }
+    #comments #respond input[name=url] {
+      margin-right: 2.5%; }
+    #comments #respond input[name=submit] {
+      background-color: #5b5;
+      border: none;
+      width: 99%;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 700; }
+      #comments #respond input[name=submit]:hover {
+        background-color: #5a5; }
+
+@media all and (max-width: 440px) {
+  #comments #commentform input {
+    display: block;
+    margin: 1rem 0 !important;
+    width: 94%;
+    font-size: 1em;
+    resize: vertical; } }
