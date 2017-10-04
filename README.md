@@ -19,6 +19,10 @@ Work in progress.
 - [ ] Add some fancy style to theme setting in wordpress panel.
 - [ ] to be continue ...
 
+## Contributors
+
+- Parsa Kafi ([@parsa-kafi](https://github.com/parsa-kafi))
+
 ## License
 
 This software is released under the [MIT](https://github.com/TheYahya/thewhite/blob/master/LICENSE) License.
