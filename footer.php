@@ -81,14 +81,14 @@
     <?php } ?>
     </ul>
 
-    <br><br>
-    <?=get_option('footer_text')?>
-
-
+    <br>
+    <?= get_option('footer_text') ?>
+    <?php if ( get_option('footer_text') != null && get_option('footer_text') != '' ) : ?>
         <div class="divider"></div>
-        <p id="copyright-stuff">
-            <a href="https://github.com/TheYahya/thewhite">قالب سفید</a> اثر <a href="http://theyahya.com/">یحیی</a>
-        </p>
+    <?php endif; ?>
+    <p id="copyright-stuff">
+        <a href="https://github.com/TheYahya/thewhite">قالب سفید</a> اثر <a href="http://theyahya.com/">یحیی</a>
+    </p>
     </div>
 </footer>
 <?php wp_footer(); ?>

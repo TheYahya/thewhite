@@ -242,10 +242,9 @@ function display_eighth_footer_link()
 
 function display_footer_text()
 {
-    ?>
-    <?php _e('text'); ?> : <input type="text" name="footer_text" id="footer_text"
-                                  value="<?php echo get_option('footer_text'); ?>"/>
-    <?php
+	?>
+			<?php _e('text'); ?> : <textarea type="text" name="footer_text" id="footer_text"><?php echo htmlentities(get_option('footer_text'), ENT_QUOTES | ENT_IGNORE, "UTF-8"); ?></textarea>
+<?php
 }
 
 
