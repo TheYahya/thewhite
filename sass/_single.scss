@@ -43,3 +43,14 @@ article {
     background: #eee;
   }
 }
+
+pre {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  @include border-radius(.2rem); 
+  color: #28fe14;
+  padding: .5rem;
+  font-family: monospace;
+  text-align: left;
+  direction: ltr;
+}
