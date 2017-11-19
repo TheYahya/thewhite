@@ -11,7 +11,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 16px;
   background: $body-bg;
 }
 a {
@@ -32,8 +32,8 @@ blockquote {
   display: block;
   background: #f8f8f8;
   @include border-radius(.4rem);
-  padding: 2rem 4rem 1rem 1.5rem;
-  margin: .2rem 2.5rem .2rem 0;  
+  padding: 2rem 3rem 1rem 1.5rem;
+  margin: .2rem 1rem .2rem 0;  
   border-left: .2rem solid $color-light; 
   border-right: .4rem solid $color-light;
   position: relative;  
@@ -42,7 +42,7 @@ blockquote {
 
 blockquote::before {
 	content: "\201C";
-    font-size: 4rem;
+  font-size: 4rem;
 	color: $color-light;
 	line-height: 1;
 	font-weight: bold;
@@ -54,7 +54,7 @@ blockquote::before {
 .container {
   max-width: $container-width; 
   margin: 0 auto;
-  padding: 0 2rem; 
+  padding: 0 .5rem; 
 }
 
 .brackets {
@@ -94,10 +94,10 @@ blockquote::before {
   color: #555; 
   line-height: .3; 
   border-bottom: 2px solid #efefef;
-  margin: 3rem 15% 1rem 15%;
+  margin: 3rem 0 1rem 0;
   span {
     background: $body-bg;
-    padding: 0 2rem;     
+    padding: 0 2rem;
   }
 }
 

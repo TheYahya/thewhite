@@ -3,7 +3,7 @@ Theme Name: TheWhite
 Author: Yahya SayadArabbi
 Author URI: http://theyahya.com
 Description: Designded By Yahya SayadArbabi, Aban-e 1394 - v3.0 (Shahrivar-e 1396).
-Version: 3.3.0
+Version: 3.4.0
 License:  The MIT License (MIT)
 License URI: https://mit-license.org/
 Tags: personal, white, simple, persian, farsi
@@ -47,7 +47,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, button, textarea {
 html, body {
   margin: 0;
   padding: 0;
-  font-size: 17px;
+  font-size: 16px;
   background: #fff; }
 
 a {
@@ -71,8 +71,8 @@ blockquote {
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
   border-radius: 0.4rem;
-  padding: 2rem 4rem 1rem 1.5rem;
-  margin: .2rem 2.5rem .2rem 0;
+  padding: 2rem 3rem 1rem 1.5rem;
+  margin: .2rem 1rem .2rem 0;
   border-left: 0.2rem solid #5E9CA3;
   border-right: 0.4rem solid #5E9CA3;
   position: relative;
@@ -89,9 +89,9 @@ blockquote::before {
   top: 1rem; }
 
 .container {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 0 auto;
-  padding: 0 2rem; }
+  padding: 0 .5rem; }
 
 .brackets {
   padding: 0 10px; }
@@ -138,7 +138,7 @@ blockquote::before {
   color: #555;
   line-height: .3;
   border-bottom: 2px solid #efefef;
-  margin: 3rem 15% 1rem 15%; }
+  margin: 3rem 0 1rem 0; }
   .divider span {
     background: #fff;
     padding: 0 2rem; }
@@ -175,7 +175,7 @@ article img {
     text-align: center;
     color: #666; }
 
-@media all and (max-width: 42rem) {
+@media all and (max-width: 47rem) {
   html, body {
     font-size: 110%; } }
 
@@ -195,12 +195,15 @@ article img {
       font-size: 1rem; }
 
 .header #blog-title {
-  text-align: center; }
+  text-align: center;
+  padding: 1rem 0 0 0; }
   .header #blog-title h1, .header #blog-title h2 {
     padding: 0;
     margin: 0; }
   .header #blog-title h1 {
-    display: inline-block; }
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: normal; }
   .header #blog-title h2 {
     color: #aaa;
     font-size: 1.2rem; }
@@ -215,7 +218,7 @@ article img {
   color: #555;
   line-height: .3;
   border-bottom: 2px solid #efefef;
-  margin: 3rem 15% 1rem 15%; }
+  margin: 3rem 0 1rem 0; }
   .date-year-divider span {
     background: #fff;
     padding: 0 2rem; }
@@ -269,7 +272,7 @@ article img {
   padding: 2rem 0; }
   #footer .container #footer-divider {
     border-bottom: 2px solid #eee;
-    margin: 3rem 5% 1rem 5%; }
+    margin: 3rem 0 1rem 0; }
   #footer .container ul {
     display: inline-block;
     list-style-type: none;
@@ -279,7 +282,6 @@ article img {
       display: inline;
       font-size: 1rem; }
   #footer #cloud-tags {
-    width: 90%;
     margin: auto; }
     #footer #cloud-tags .tag-cloud-link {
       display: inline-block;
@@ -303,7 +305,7 @@ article img {
   color: #555;
   line-height: .3;
   border-bottom: 2px solid #efefef;
-  margin: 3rem 15% 1rem 15%; }
+  margin: 3rem 0 1rem 0; }
   .post-date-divider span {
     background: #fff;
     padding: 0 2rem; }
