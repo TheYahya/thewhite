@@ -12,7 +12,7 @@ Simple wordpress theme.
 - [ ] Added fully english support and ltr.
 - [x] Clean up the fonts mess!
 - [ ] Make header & footer links dynamics.
-- [ ] Add some fancy style to theme setting in wordpress panel.
+- [ ] Add some fancy style to theme settings in wordpress panel.
 - [ ] to be continue ...
 
 ## Contributors
