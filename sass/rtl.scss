@@ -18,32 +18,6 @@ Text Domain: Just White & Simple!
   font-weight: normal;
 }
 
-@font-face {
-  font-family: Samim;
-  src: url('fonts/samim/Samim.eot');
-  src: url('fonts/samim/Samim.eot?#iefix') format('embedded-opentype'),
-       url('fonts/samim/Samim.woff') format('woff'),
-       url('fonts/samim/Samim.ttf') format('truetype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: Samim;
-  src: url('fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot');
-  src: url('fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.eot?#iefix') format('embedded-opentype'),
-       url('fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.woff') format('woff'),
-       url('fonts/samim/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Vazir Code;
-  src: url('fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot');
-  src: url('fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.eot?#iefix') format('embedded-opentype'),
-       url('fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.woff') format('woff'),
-       url('fonts/vazir-code/Farsi-Digits-Without-Latin/Vazir-Code-FD-WOL.ttf') format('truetype');
-  font-weight: normal;
-}
 @import "mixins";
 @import "variables"; 
 @import "general";
