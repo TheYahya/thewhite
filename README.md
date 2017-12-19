@@ -2,10 +2,6 @@
 
 Simple wordpress theme.
 
-## Status
-
-Work in progress.
-
 ## Screenshot
 ![Screenshot](https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png)
 
@@ -14,7 +10,7 @@ Work in progress.
 - [x] Automate the compile of sass and language files with gulp.
 - [x] Add a label option for post that can be recognize in archive(index).
 - [ ] Added fully english support and ltr.
-- [ ] Clean up the fonts mess!
+- [x] Clean up the fonts mess!
 - [ ] Make header & footer links dynamics.
 - [ ] Add some fancy style to theme setting in wordpress panel.
 - [ ] to be continue ...
