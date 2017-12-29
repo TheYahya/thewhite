@@ -13,6 +13,7 @@ Simple wordpress theme.
 - [x] Clean up the fonts mess!
 - [ ] Make header & footer links dynamics.
 - [ ] Add some fancy style to theme settings in wordpress panel.
+- [ ] Don't show the title of tags & categories if it's empty
 - [ ] to be continue ...
 
 ## Contributors
