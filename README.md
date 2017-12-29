@@ -1,6 +1,6 @@
 # TheWhite
 
-Simple wordpress theme.
+It's a minimal and light wordpress blog theme :art:.
 
 ## Screenshot
 ![Screenshot](https://raw.githubusercontent.com/TheYahya/thewhite/master/screenshot.png)
