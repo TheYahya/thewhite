@@ -14,6 +14,8 @@ It's a minimal and light wordpress blog theme :art:.
 - [ ] Make header & footer links dynamics.
 - [ ] Add some fancy style to theme settings in wordpress panel.
 - [ ] Don't show the title of tags & categories if it's empty
+- [ ] Move post dates to left in index(archive).
+- [ ] Add fonts with npm except the way alredy doing it!
 - [ ] to be continue ...
 
 ## Contributors
