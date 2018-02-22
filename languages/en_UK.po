@@ -109,3 +109,6 @@ msgstr "Meta tag option"
 
 msgid "Comment (Required)"
 msgstr "Comment (Required)"
+
+msgid "Administrator"
+msgstr "Administrator"

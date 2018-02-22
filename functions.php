@@ -401,7 +401,7 @@ if ( ! class_exists( 'WPB_Comment_Author_Role_Label' ) ) {
                 $commet_user_role = get_user_by( 'email', $authoremail );
                 $comment_user_role = $commet_user_role->roles[0];
                 // HTML output to add next to comment author name
-                $this->comment_user_role = ' <span class="comment-author-label comment-author-label-'.$comment_user_role.'">' . ucfirst($comment_user_role) . '</span>';
+                $this->comment_user_role = ' <span class="comment-author-label comment-author-label-'.$comment_user_role.'">' . __(ucfirst($comment_user_role)) . '</span>';
             } else { 
                 $this->comment_user_role = '';
             } 

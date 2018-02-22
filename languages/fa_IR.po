@@ -109,3 +109,6 @@ msgstr "قابلیت متا تگ"
 
 msgid "Comment (Required)"
 msgstr "نظر شما (لازم)"
+
+msgid "Administrator"
+msgstr "مدیر"
