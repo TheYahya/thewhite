@@ -52,7 +52,7 @@
 	}
 
 	.bypostauthor {
-		.fn::after {
+		.comment-author-label {
 			content: 'author';
 			display: inline-block;
 			margin: 0 .5rem;

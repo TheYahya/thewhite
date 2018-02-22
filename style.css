@@ -386,7 +386,7 @@ article {
         border-radius: 0.2rem;
         padding: 0 .3rem;
         font-size: .7rem; }
-  #comments .bypostauthor .fn::after {
+  #comments .bypostauthor .comment-author-label {
     content: 'author';
     display: inline-block;
     margin: 0 .5rem;

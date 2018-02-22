@@ -380,3 +380,38 @@ function prfx_meta_save( $post_id ) {
         update_post_meta( $post_id, 'meta-tag-color', sanitize_text_field( $_POST[ 'meta-tag-color' ] ) );
     } 
 }
+
+
+/**
+ * Add user role lable next to comments
+ */
+if ( ! class_exists( 'WPB_Comment_Author_Role_Label' ) ) {
+    class WPB_Comment_Author_Role_Label {
+
+        public function __construct() {
+            add_filter( 'get_comment_author', array( $this, 'wpb_get_comment_author_role' ), 10, 3 );
+            add_filter( 'get_comment_author_link', array( $this, 'wpb_comment_author_role' ) );
+        }
+     
+        // Get comment author role 
+        function wpb_get_comment_author_role($author, $comment_id, $comment) { 
+            $authoremail = get_comment_author_email( $comment); 
+            // Check if user is registered
+            if (email_exists($authoremail)) {
+                $commet_user_role = get_user_by( 'email', $authoremail );
+                $comment_user_role = $commet_user_role->roles[0];
+                // HTML output to add next to comment author name
+                $this->comment_user_role = ' <span class="comment-author-label comment-author-label-'.$comment_user_role.'">' . ucfirst($comment_user_role) . '</span>';
+            } else { 
+                $this->comment_user_role = '';
+            } 
+            return $author;
+        } 
+     
+        // Display comment author                   
+        function wpb_comment_author_role($author) { 
+            return $author .= $this->comment_user_role; 
+        } 
+    }
+    new WPB_Comment_Author_Role_Label;
+}
