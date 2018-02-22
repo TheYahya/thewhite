@@ -383,7 +383,7 @@ function prfx_meta_save( $post_id ) {
 
 
 /**
- * Add user role lable next to comments
+ * Add user role label next to comments
  */
 if ( ! class_exists( 'WPB_Comment_Author_Role_Label' ) ) {
     class WPB_Comment_Author_Role_Label {
