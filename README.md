@@ -18,6 +18,7 @@ It's a minimal and light wordpress blog theme :art:.
 - [ ] Don't show the title of tags & categories if it's empty
 - [ ] Move post dates to left in index(archive).
 - [ ] Add fonts with npm except the way already doing it!
+- [ ] Add theme color field to theme panel.
 - [ ] to be continue ...
 
 ## Contributors
