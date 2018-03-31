@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container"> 
-
+<div class="article-list">
 <?php 
 $slug = (get_queried_object()) ? get_queried_object()->slug : null;
 $args = array(
@@ -55,5 +55,6 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 endforeach; 
 wp_reset_postdata();
 ?>
+</div><!-- /.article-list -->
 </div> 
 <?php get_footer(); ?>

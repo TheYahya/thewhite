@@ -55,3 +55,11 @@
   font-size: .7rem;
   padding: 0 .4rem;
 }
+.article-list {
+  article {
+    display: flex;
+    h3 {
+      flex: 1;
+    }
+  }
+}
