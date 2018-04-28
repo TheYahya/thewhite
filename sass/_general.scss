@@ -51,6 +51,13 @@ blockquote::before {
 	top: 1rem;
 }
 
+code {
+  background: $color-light2;
+  color: $color-hover;
+  border-radius: .3rem;
+  padding: 0 .4rem;
+}
+
 .container {
   max-width: $container-width; 
   margin: 0 auto;

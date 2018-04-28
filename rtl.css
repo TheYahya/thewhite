@@ -3,7 +3,7 @@ Theme Name: TheWhite
 Author: Yahya SayadArabbi
 Author URI: http://theyahya.com
 Description: Designded By Yahya SayadArbabi, Aban-e 1394 - v3.0 (Shahrivar-e 1396).
-Version: 3.5.3
+Version: 3.5.4
 License:  The MIT License (MIT)
 License URI: https://mit-license.org/
 Tags: personal, white, simple, persian, farsi
@@ -69,6 +69,12 @@ blockquote::before {
   position: absolute;
   right: 1rem;
   top: 1rem; }
+
+code {
+  background: #b5dadf;
+  color: #156770;
+  border-radius: .3rem;
+  padding: 0 .4rem; }
 
 .container {
   max-width: 40rem;
