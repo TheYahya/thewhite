@@ -19,6 +19,6 @@ gulp.task('languages', function () {
 
 // gulp watchers
 gulp.task('default', function() {
-  gulp.watch('./sass/*', ['sass']).addListener;
-  gulp.watch('./languages/*', ['languages']).addListener;
+  gulp.watch('./sass/*', gulp.parallel(['sass'])).addListener;
+  gulp.watch('./languages/*', gulp.parallel(['languages'])).addListener;
 });
